@@ -80,9 +80,10 @@ Essential distinctions:
   The exact transition, the fixed rational witness threshold and the conservative
   trace-norm radius are different statements. They do not characterize arbitrary
   errors in the individual channel slots.
-- NPT implies entanglement in all finite dimensions. PPT is sufficient for
-  separability here only in the stated 2x2 and 2x3 uses of the inherited theorem;
-  a numerical PPT observation alone does not prove a general construction separable.
+- NPT implies entanglement in all finite dimensions. General dimension-based
+  PPT sufficiency is used only in 2x2 and 2x3. The inherited conditional-unitary
+  family has its own special commuting iff separable, otherwise NPT criterion;
+  a numerical PPT observation alone does not prove a general state separable.
 - Ideal coherent order control is supplied. Each branch visits every independent
   slot once, with inaccessible environments, no intermediate target gates and
   no target-carrying bypass. Count the full target Hilbert-space dimension.
