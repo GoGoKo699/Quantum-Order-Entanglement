@@ -74,7 +74,7 @@ K_0&=\sqrt{1-p}(|\varnothing\rangle\langle\varnothing|+S)
      +|f\rangle\langle f|,\\
 K_1&=\sqrt{p}\,|0\rangle\langle\varnothing|,\\
 F_j&=\sqrt{p}\,|f\rangle\langle j|,
-\qquad 0\le j<n.
+\qquad 0\le j\lt n.
 \qquad\text{(4)}
 \end{aligned}
 ```
