@@ -70,10 +70,10 @@ The marker subspace is spanned by $`|0\rangle,\ldots,|n-1\rangle`$. Let $`S|j\ra
 
 ```math
 \begin{aligned}
-K_0&=\sqrt{1-p}\bigl(|\varnothing\rangle\langle\varnothing|+S\bigr)
+K_0&=\sqrt{1-p}(|\varnothing\rangle\langle\varnothing|+S)
      +|f\rangle\langle f|,\\
-K_1&=\sqrt p\,|0\rangle\langle\varnothing|,\\
-F_j&=\sqrt p\,|f\rangle\langle j|,
+K_1&=\sqrt{p}\,|0\rangle\langle\varnothing|,\\
+F_j&=\sqrt{p}\,|f\rangle\langle j|,
 \qquad 0\le j<n.
 \qquad\text{(4)}
 \end{aligned}
@@ -164,7 +164,7 @@ In fact, the unconditional output is block diagonal in the empty, marker and fai
 \qquad\text{(10)}
 ```
 
-where $`R_C\ge0`$ and $`\operatorname{Tr}R_C=1-(1-p)^n-q`$. Thus the NPT marker block is not canceled by other target sectors.
+where $`R_C\ge0`$ and $`\mathrm{Tr}R_C=1-(1-p)^n-q`$. Thus the NPT marker block is not canceled by other target sectors.
 
 ### Resources and the role of filtering
 
@@ -188,7 +188,7 @@ Take $`T=(\mathbb C^s)^{\otimes n}`$ with $`s\ge2`$, and define
 
 ```math
 \mathcal N(\rho)
-=\operatorname{Tr}_1(\rho)\otimes\frac{I_s}{s}.
+=\mathrm{Tr}_1(\rho)\otimes\frac{I_s}{s}.
 \qquad\text{(12)}
 ```
 
@@ -205,7 +205,7 @@ K_{ab}=\frac1{\sqrt s}
 It is immediate from (12), or from summing (13), that the map is trace preserving and
 
 ```math
-\mathcal N^n(X)=\operatorname{Tr}(X)\frac{I_{s^n}}{s^n}.
+\mathcal N^n(X)=\mathrm{Tr}(X)\frac{I_{s^n}}{s^n}.
 \qquad\text{(14)}
 ```
 

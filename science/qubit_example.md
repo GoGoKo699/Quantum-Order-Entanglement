@@ -23,10 +23,10 @@ The channel measures the target in the computational basis and prepares the corr
 
 It is trace preserving because $`K_0^\dagger K_0+K_1^\dagger K_1=I_2`$. Its measure-and-prepare form makes it entanglement breaking: when applied to one part of any target–reference state, the output is a sum of positive reference operators tensored with the prepared pure target states.
 
-Both computational-basis diagonal entries of $`\mathcal N(X)`$ equal $`\operatorname{Tr}(X)/2`$. Therefore
+Both computational-basis diagonal entries of $`\mathcal N(X)`$ equal $`\mathrm{Tr}(X)/2`$. Therefore
 
 ```math
-\mathcal N^2(X)=\operatorname{Tr}(X)\frac{I_2}{2}
+\mathcal N^2(X)=\mathrm{Tr}(X)\frac{I_2}{2}
 =\Delta(X).
 \qquad\text{(3)}
 ```

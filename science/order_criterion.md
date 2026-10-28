@@ -63,7 +63,7 @@ If $`G_\Pi`$ is abelian, the relative unitaries $`R_\pi`$ commute. There is a un
 
 ```math
 V R_\pi V^\dagger
-=\operatorname{diag}(\lambda_{\pi,1},\ldots,\lambda_{\pi,r^n}),
+=\mathrm{diag}(\lambda_{\pi,1},\ldots,\lambda_{\pi,r^n}),
 \qquad |\lambda_{\pi,\ell}|=1.
 \qquad\text{(4)}
 ```

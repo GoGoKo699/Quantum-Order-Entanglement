@@ -106,10 +106,10 @@ Let
 W=(|v\rangle\langle v|)^{\Gamma_T}.
 ```
 
-For every separable state $`\sigma`$, $`\operatorname{Tr}(W\sigma)\ge0`$. The Schmidt weights of $`v`$ are $`8/9`$ and $`1/9`$, so $`\|W\|_\infty=8/9`$. For any physical perturbed output $`\widetilde\rho`$, Hölder's inequality gives
+For every separable state $`\sigma`$, $`\mathrm{Tr}(W\sigma)\ge0`$. The Schmidt weights of $`v`$ are $`8/9`$ and $`1/9`$, so $`\|W\|_\infty=8/9`$. For any physical perturbed output $`\widetilde\rho`$, Hölder's inequality gives
 
 ```math
-\operatorname{Tr}(W\widetilde\rho)
+\mathrm{Tr}(W\widetilde\rho)
 \le-\frac1{54}+\frac89\|\widetilde\rho-\rho\|_1.
 ```
 
