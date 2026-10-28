@@ -1,0 +1,78 @@
+{
+  "status": "all exact certificates passed",
+  "channel_square": "X -> Tr(X) I_2/2 on all four matrix units",
+  "rho_numerator_M": [
+    [
+      2,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      2,
+      0,
+      2,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "rho_denominator": 12,
+  "partial_transpose_determinant": "-1/248832",
+  "normalized_witness_value": "-1/54",
+  "characteristic_polynomial_M_partial_transpose": [
+    "1",
+    "-12",
+    "52",
+    "-100",
+    "79",
+    "-8",
+    "-12"
+  ],
+  "characteristic_factorization": "(x-1)(x-2)(x-3)(x^3-6x^2+5x+2)",
+  "local_projection_success": "1/2",
+  "projected_partial_transpose_principal_minor": "-1/72",
+  "coherence_threshold_polynomial": "2 eta^3 - 7 eta^2 + 4",
+  "exact_threshold_bracket": [
+    "4362237430149/5000000000000",
+    "8724474860299/10000000000000"
+  ],
+  "coherence_threshold_approx": 0.872447486029822,
+  "noise_admixture_threshold_approx": 0.127552513970178,
+  "simple_witness_certification": "eta > 9/10 (noise admixture < 1/10)",
+  "sufficient_output_trace_norm_radius_strict": "1/48"
+}
