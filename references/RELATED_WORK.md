@@ -93,4 +93,10 @@ Separability implies a positive partial transpose. This necessary condition cert
 
 PPT is also sufficient for separability in $`2\times2`$ and $`2\times3`$. The [exact robustness threshold](../science/robustness.md#exact-separability-transition) uses this inherited result for the $`3\times2`$ output. The larger-dimensional construction relies on NPT to establish entanglement and does not infer separability from numerical PPT checks.
 
+## Educational anchor
+
+**John Watrous**, *The Theory of Quantum Information*, Cambridge University Press (2018). [DOI](https://doi.org/10.1017/9781316848142); [author's book page and manuscript chapters](https://jhwatrous.github.io/books-and-courses.html).
+
+This is the single educational anchor. Its treatment of channels, Kraus representations, separable maps and permutation operators supplies the foundations used in the [learning bridge](../learning/WATROUS_BRIDGE.md). The generalized-switch model, the inherited conditional-unitary lemma and the project-specific realization arguments are identified separately. The textbook is not cited as a source for the new order-support theorem or as a substitute for the primary research dependencies above.
+
 Structured records, inspected versions and equation pointers are collected in [references.bib](references.bib).

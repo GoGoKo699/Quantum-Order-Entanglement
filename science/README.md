@@ -25,3 +25,7 @@ The [related-work account](../references/RELATED_WORK.md) attributes the standar
 | Nonabelian support does not suffice for every channel or for an EB-only converse | [Channel-family boundaries](interpretation.md#channel-families-that-remain-nonentangling) |
 
 The universal theorem concerns all finite target dimensions. Its converse uses pure controllers with nonzero amplitudes on their selected support. Arbitrary mixed-controller necessity and a fixed-target-dimension classification are not asserted.
+
+## Learning route
+
+The [Watrous bridge](../learning/WATROUS_BRIDGE.md) connects the selected textbook's channels, separable maps and permutation operators to this model. The [30-milestone map](../learning/MILESTONES.md) organizes the common understanding targets from local ingredients to the complete result. These explanations support the reading route above; the topic pages retain the authoritative statements and full proofs.

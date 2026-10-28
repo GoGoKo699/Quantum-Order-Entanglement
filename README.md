@@ -46,6 +46,19 @@ Start with the [scientific account](science/README.md), or use a direct route be
 
 The conditional-unitary commutation criterion is inherited from Roszak, and the two-slot identical-channel obstruction is explicit in Chiribella et al. Generalized switches, cyclic-coset organization and three-identical-channel metrology also have prior sources. The contribution here is the complete constrained order-support criterion, its repeated-channel realizations and the exact minimal example. The [comparison account](references/RELATED_WORK.md) identifies the source of each ingredient.
 
+## Learn the project
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](learning/WATROUS_BRIDGE.md) identifies focused readings, translates the source's notation, and develops the connections to coherent order control. The [30-milestone map](learning/MILESTONES.md) organizes the project's understanding targets and their dependencies.
+
+Begin with the bridge's physical question, then use the map alongside the linked scientific pages. Its background phase assembles states, channels, entanglement and permutation representations into the precise model. Its narrative phase connects the universal obstruction, the channel constructions, the qubit example and the limitations into the complete result. The map is shared by all readers; it is defined by the science rather than by an assumed level of prior knowledge.
+
+| Reading purpose | Route |
+|---|---|
+| Understand the scientific story | [Model](science/model.md), [criterion](science/order_criterion.md), [realizations](science/channel_realizations.md), then [interpretation](science/interpretation.md) |
+| Build the conceptual foundations | [Watrous bridge](learning/WATROUS_BRIDGE.md) alongside [M01–M30](learning/MILESTONES.md) |
+| Inspect a concrete entanglement certificate | [Qubit example](science/qubit_example.md), [noise threshold](science/robustness.md), then [verification](verification/README.md) |
+| Locate a claim or proof dependency | [Scientific claim map](science/README.md#claim-and-proof-map), [related work](references/RELATED_WORK.md), and [LLM reading guide](llms.txt) |
+
 ## Reproduce the finite checks
 
 The main certificate uses Python's standard library:
