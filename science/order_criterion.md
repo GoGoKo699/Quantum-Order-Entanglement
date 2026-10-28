@@ -1,0 +1,137 @@
+# Which order families can generate entanglement?
+
+The [model](model.md) supplies independent identical channel slots and coherent control over their permutations. The criterion below depends only on those permutations. It quantifies over all finite-dimensional target channels, rather than testing one chosen noise model.
+
+## Relative permutations
+
+Choose any reference $`\pi_0\in\Pi`$, and define
+
+```math
+G_\Pi=\left\langle\pi_0^{-1}\pi:\pi\in\Pi\right\rangle
+\subseteq S_n.
+\tag{1}
+```
+
+Permutations are composed as functions: $`(\pi\tau)(j)=\pi(\tau(j))`$. The generators commute pairwise exactly when $`G_\Pi`$ is abelian. Equivalently, $`\Pi`$ is contained in a left coset of an abelian subgroup.
+
+The group in (1) is independent of the reference. If $`\pi_1=\pi_0 h`$ with $`h\in G_\Pi`$, the new generators are $`h^{-1}g_\pi`$. They belong to the old group. Conversely, the new family contains $`h^{-1}`$ by taking $`\pi=\pi_0`$, so it also generates every old $`g_\pi=h(h^{-1}g_\pi)`$. The right-relative family $`\{\pi\pi_0^{-1}\}`$ is a common conjugate of the left-relative family and has the same commutativity property.
+
+## Theorem 1. The order-support criterion
+
+Let $`\Pi\subseteq S_n`$ be nonempty. The following are equivalent:
+
+1. $`G_\Pi`$ is abelian.
+2. For every finite-dimensional channel $`\mathcal N`$, the joint switch $`\mathfrak S_{\Pi,\mathcal N}`$ has a product Kraus representation across $`C:T`$.
+3. For every finite-dimensional channel $`\mathcal N`$ and every separable input, the joint switch output is separable across $`C:T`$.
+4. For every finite-dimensional channel $`\mathcal N`$, every target input, and every pure controller with occupied support exactly $`\Pi`$, the output is separable across $`C:T`$.
+
+When $`G_\Pi`$ is nonabelian, there is a stronger constructive statement. For each $`n\ge3`$, **one fixed channel on an $`n+2`$-dimensional target**, with one fixed pure target input, yields an NPT output for every nonabelian $`\Pi`$ and every pure controller with nonzero amplitudes on that support. The channel depends on $`n`$, not on the chosen support or its amplitudes.
+
+The [linear-dimension realization](channel_realizations.md#the-linear-dimension-channel) proves this last statement and the implication from failure of (1) to failure of (4). The proof below establishes (1)–(2); the remaining forward implications follow from the definition of a separable operation.
+
+## Proof of abelian sufficiency
+
+### A common Kraus-index space
+
+Fix a Kraus family $`\{K_a\}_{a=0}^{r-1}`$ for $`\mathcal N`$. Form the operator-valued vector
+
+```math
+B_{\boldsymbol a}=K_{a_{n-1}}\cdots K_{a_0},
+\qquad \boldsymbol a\in\{0,\ldots,r-1\}^n.
+```
+
+On this $`r^n`$-dimensional index space, define a permutation unitary by
+
+```math
+(Q_\pi x)_{\boldsymbol a}
+=x_{(a_{\pi(0)},\ldots,a_{\pi(n-1)})}.
+\tag{2}
+```
+
+Direct substitution gives $`Q_\pi Q_\tau=Q_{\pi\tau}`$. The product-Kraus vector for physical order $`\pi`$ is $`A^\pi=Q_\pi B`$.
+
+Set $`B^{(0)}=Q_{\pi_0}B`$. Then
+
+```math
+A^\pi=R_\pi B^{(0)},
+\qquad R_\pi=Q_\pi Q_{\pi_0}^\dagger
+=Q_{\pi\pi_0^{-1}}.
+\tag{3}
+```
+
+If $`G_\Pi`$ is abelian, the relative unitaries $`R_\pi`$ commute. There is a unitary matrix $`V`$ on the Kraus-index space such that
+
+```math
+V R_\pi V^\dagger
+=\operatorname{diag}(\lambda_{\pi,1},\ldots,\lambda_{\pi,r^n}),
+\qquad |\lambda_{\pi,\ell}|=1.
+\tag{4}
+```
+
+Faithfulness of this representation is not required for sufficiency.
+
+### Product Kraus operators
+
+Apply the same unitary change of Kraus representation to the whole joint channel:
+
+```math
+\widetilde W_\ell
+=\sum_{\boldsymbol a}V_{\ell,\boldsymbol a}W_{\boldsymbol a}.
+```
+
+Define $`L_\ell=(V B^{(0)})_\ell`$. Equations (3)–(4) give
+
+```math
+\widetilde W_\ell=D_\ell\otimes L_\ell,
+\qquad
+D_\ell=\sum_{\pi\in\Pi}\lambda_{\pi,\ell}
+|\pi\rangle\langle\pi|.
+\tag{5}
+```
+
+Each $`D_\ell`$ is a diagonal unitary on the controller. Because the $`L_\ell`$ are another Kraus representation of $`\mathcal N^n`$,
+
+```math
+\sum_\ell L_\ell^\dagger L_\ell=I_T.
+```
+
+The joint channel therefore has the representation
+
+```math
+\mathfrak S_{\Pi,\mathcal N}(X)
+=\sum_\ell(D_\ell\otimes L_\ell)
+X(D_\ell\otimes L_\ell)^\dagger.
+\tag{6}
+```
+
+Every term sends a positive product operator to a positive product operator. By convexity, (6) preserves every separable state. This proves (1) implies (2) and (3), and hence (4).
+
+The argument uses a mathematical change of the inaccessible environmental index basis. It does not assume that the user can resolve or manipulate that environment. It extends the familiar two-history Kraus-freedom mechanism to a simultaneously diagonalizable family; the [attribution account](../references/RELATED_WORK.md#two-history-obstructions) distinguishes that inherited ingredient from the converse realization.
+
+## Consequences
+
+### Any two alternatives are nonentangling
+
+For $`\Pi=\{\pi_0,\pi_1\}`$, the relative group is generated by a single permutation and is cyclic. Therefore **any two coherent order alternatives**, even among arbitrarily many identical slots, preserve controller–target separability. The identical two-slot case is already explicit in [Chiribella et al.](../references/RELATED_WORK.md#chiribella2021).
+
+For $`n\le2`$, the full permutation group is abelian, so no order support can generate the entanglement considered here. At $`n=3`$, the support
+
+```math
+\Pi=\{012,021,102\}
+```
+
+has two noncommuting relative transpositions. The [entanglement-breaking qubit example](qubit_example.md) consequently attains both minima: **three calls and three occupied coherent alternatives**.
+
+### More cyclic alternatives do not remove the obstruction
+
+Every subset of a coset of a cyclic subgroup is covered by Theorem 1. In particular, coherent control over all cyclic rotations of $`n`$ slots remains nonentangling across $`C:T`$ for every identical channel. Such order families can still improve communication tasks. The distinction between those tasks and this entanglement question is explained in the [interpretation](interpretation.md#communication-and-entanglement-are-different-tasks).
+
+### Mixed controllers: a sufficient condition
+
+If a mixed controller is a convex combination of pure states whose individual supports have abelian relative groups, the output is separable for every independent target input. In particular, this holds for any convex combination of pure controller states each occupying at most two orders.
+
+This convexity statement is only a sufficient condition. The theorem does not classify arbitrary mixed controllers by the pattern of their nonzero matrix entries, and no mixed-state converse is inferred from it.
+
+## How to use the criterion
+
+For a specified pure control support, choose a reference order, form its relative permutations, and check whether every pair commutes. A commuting family rules out the capability for every identical channel. A noncommuting pair proves that some channel can generate entanglement; it does not establish that a chosen noise model will do so. The explicit channel in the next page supplies that existential step with a fixed, linear target dimension.
