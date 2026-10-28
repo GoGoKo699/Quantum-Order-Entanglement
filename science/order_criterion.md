@@ -9,7 +9,7 @@ Choose any reference $`\pi_0\in\Pi`$, and define
 ```math
 G_\Pi=\left\langle\pi_0^{-1}\pi:\pi\in\Pi\right\rangle
 \subseteq S_n.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 Permutations are composed as functions: $`(\pi\tau)(j)=\pi(\tau(j))`$. The generators commute pairwise exactly when $`G_\Pi`$ is abelian. Equivalently, $`\Pi`$ is contained in a left coset of an abelian subgroup.
@@ -45,7 +45,7 @@ On this $`r^n`$-dimensional index space, define a permutation unitary by
 ```math
 (Q_\pi x)_{\boldsymbol a}
 =x_{(a_{\pi(0)},\ldots,a_{\pi(n-1)})}.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 Direct substitution gives $`Q_\pi Q_\tau=Q_{\pi\tau}`$. The product-Kraus vector for physical order $`\pi`$ is $`A^\pi=Q_\pi B`$.
@@ -56,7 +56,7 @@ Set $`B^{(0)}=Q_{\pi_0}B`$. Then
 A^\pi=R_\pi B^{(0)},
 \qquad R_\pi=Q_\pi Q_{\pi_0}^\dagger
 =Q_{\pi\pi_0^{-1}}.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 If $`G_\Pi`$ is abelian, the relative unitaries $`R_\pi`$ commute. There is a unitary matrix $`V`$ on the Kraus-index space such that
@@ -65,7 +65,7 @@ If $`G_\Pi`$ is abelian, the relative unitaries $`R_\pi`$ commute. There is a un
 V R_\pi V^\dagger
 =\operatorname{diag}(\lambda_{\pi,1},\ldots,\lambda_{\pi,r^n}),
 \qquad |\lambda_{\pi,\ell}|=1.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Faithfulness of this representation is not required for sufficiency.
@@ -86,7 +86,7 @@ Define $`L_\ell=(V B^{(0)})_\ell`$. Equations (3)–(4) give
 \qquad
 D_\ell=\sum_{\pi\in\Pi}\lambda_{\pi,\ell}
 |\pi\rangle\langle\pi|.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Each $`D_\ell`$ is a diagonal unitary on the controller. Because the $`L_\ell`$ are another Kraus representation of $`\mathcal N^n`$,
@@ -101,7 +101,7 @@ The joint channel therefore has the representation
 \mathfrak S_{\Pi,\mathcal N}(X)
 =\sum_\ell(D_\ell\otimes L_\ell)
 X(D_\ell\otimes L_\ell)^\dagger.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Every term sends a positive product operator to a positive product operator. By convexity, (6) preserves every separable state. This proves (1) implies (2) and (3), and hence (4).

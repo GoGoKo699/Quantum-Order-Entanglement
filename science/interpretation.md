@@ -24,7 +24,7 @@ Controller–target separability follows directly from that old block formula. D
 \rho_{CT}^{\mathrm{out}}
 =\sum_t C_t\otimes|t\rangle\langle t|,
 \qquad C_t\ge0.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 After absorbing each nonzero $`\operatorname{Tr}C_t`$ into a probability, this is a separable decomposition. This inference holds even for nonabelian supports and arbitrarily many orders. It is not a new depolarizer formula or a denial of their communication advantages.
