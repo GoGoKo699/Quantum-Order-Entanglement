@@ -26,7 +26,7 @@ Thus $`012`$ means slot 0 first and slot 2 last. For an environmental index tupl
 ```math
 A_{\boldsymbol a,\pi}
 =K_{a_{\pi(n-1)}}\cdots K_{a_{\pi(0)}}.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The tuple is indexed by physical slots, not by positions in time. The same slot index appears in every coherent branch. Summing over independent tuples traces out the separate noise environments; it does not provide the controller with their outcomes.
@@ -40,7 +40,7 @@ Choose a nonempty set of distinct orders $`\Pi\subseteq S_n`$. The controller $`
 W_{\boldsymbol a}
 =\sum_{\pi\in\Pi}|\pi\rangle\langle\pi|
  \otimes A_{\boldsymbol a,\pi}.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 The tensor-factor order throughout is $`C\otimes T`$. This is the standard generalized-switch resource; see the [primary-source comparisons](../references/RELATED_WORK.md#generalized-switches).
@@ -86,7 +86,7 @@ The main existence statements use an independent input
 |\alpha\rangle=\sum_{\pi\in\Pi}\alpha_\pi|\pi\rangle,
 \qquad \sum_\pi|\alpha_\pi|^2=1,
 \qquad \alpha_\pi\ne0.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 The set $`\Pi`$ is the occupied support of this pure controller. Zero amplitudes are removed before applying the criterion. The output blocks are
@@ -97,7 +97,7 @@ The set $`\Pi`$ is the occupied support of this pure controller. Zero amplitudes
 \alpha_\pi\overline{\alpha_\tau}|\pi\rangle\langle\tau|
 \otimes\sum_{\boldsymbol a}
 A_{\boldsymbol a,\pi}\rho_T A_{\boldsymbol a,\tau}^\dagger.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 Every diagonal target block is proportional to $`\mathcal N^n(\rho_T)`$. Tracing out the controller also gives $`\mathcal N^n(\rho_T)`$. The off-diagonal blocks contain correlations among differently ordered products and need not be determined by that diagonal channel.

@@ -9,7 +9,7 @@ Let $`|\pm\rangle=(|0\rangle\pm|1\rangle)/\sqrt2`$, and define
 ```math
 K_0=|+\rangle\langle0|,
 \qquad K_1=|-\rangle\langle1|.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The channel measures the target in the computational basis and prepares the corresponding $`X`$-basis state:
@@ -18,17 +18,17 @@ The channel measures the target in the computational basis and prepares the corr
 \mathcal N(X)
 =X_{00}|+\rangle\langle+|
  +X_{11}|-\rangle\langle-|.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 It is trace preserving because $`K_0^\dagger K_0+K_1^\dagger K_1=I_2`$. Its measure-and-prepare form makes it entanglement breaking: when applied to one part of any target–reference state, the output is a sum of positive reference operators tensored with the prepared pure target states.
 
-Both computational-basis diagonal entries of $`\mathcal N(X)`$ equal $`\operatorname{Tr}(X)/2`$. Therefore
+Both computational-basis diagonal entries of $`\mathcal N(X)`$ equal $`\mathrm{Tr}(X)/2`$. Therefore
 
 ```math
-\mathcal N^2(X)=\operatorname{Tr}(X)\frac{I_2}{2}
+\mathcal N^2(X)=\mathrm{Tr}(X)\frac{I_2}{2}
 =\Delta(X).
-\tag{3}
+\qquad\text{(3)}
 ```
 
 The channel is also unital, so $`\mathcal N^3=\Delta`$. Equation (3) holds on the full operator space, including off-diagonal input operators; it is not merely agreement on selected states.
@@ -40,7 +40,7 @@ Use three independent slots implementing (1), with inaccessible noise environmen
 ```math
 |+_3\rangle
 =\frac{|012\rangle+|021\rangle+|102\rangle}{\sqrt3}.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 The words are chronological. For example, $`012`$ corresponds to $`K_{i_2}K_{i_1}K_{i_0}`$. Relative to $`012`$, the other two orders are the transpositions of positions $`(1\;2)`$ and $`(0\;1)`$. They do not commute.
@@ -91,7 +91,7 @@ b_{\boldsymbol i}b_{\boldsymbol i}^T
 1&0&1&1&2&0\\
 0&1&0&0&0&2
 \end{pmatrix}.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Each diagonal controller block is $`I_2/6`$, as required by the completely depolarizing definite-order channel. Equation (5) is the unconditional output.
@@ -108,14 +108,14 @@ direct partial transposition of the target gives
 
 ```math
 \langle v|\rho^{\Gamma_T}|v\rangle=-\frac1{54}.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Thus the output is NPT and entangled. An additional exact certificate is
 
 ```math
 \det(\rho^{\Gamma_T})=-\frac1{248832}.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Neither conclusion conditions on a measurement result. The [exact-arithmetic program](../verification/verify_exact.py) reconstructs (5) from the eight independent Kraus tuples and verifies (3), (6) and (7).
@@ -139,7 +139,7 @@ Project the controller onto their span and identify that two-dimensional subspac
 0&\frac1{6\sqrt2}&\frac13&0\\
 0&-\frac1{6\sqrt2}&0&\frac13
 \end{pmatrix}.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The principal minor of $`\sigma^{\Gamma_T}`$ on $`\{a0,b1\}`$ is
@@ -150,7 +150,7 @@ The principal minor of $`\sigma^{\Gamma_T}`$ on $`\{a0,b1\}`$ is
 1/(6\sqrt2)&1/3
 \end{pmatrix}
 =-\frac1{72}.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 This local operation reveals an entangled two-qubit state. It is not a pure Bell pair in one copy. The unconditional certificate (6) remains the main entanglement-generation result.

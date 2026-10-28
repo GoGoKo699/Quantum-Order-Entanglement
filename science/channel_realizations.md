@@ -12,7 +12,7 @@ Let $`U_0,\ldots,U_{m-1}`$ be unitaries on $`\mathbb C^D`$, and let $`\alpha_i\n
 \sigma=\frac1D\sum_{i,j=0}^{m-1}
 \alpha_i\overline{\alpha_j}|i\rangle\langle j|
 \otimes U_iU_j^\dagger.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 This is the output of controlled unitaries applied to
@@ -37,7 +37,7 @@ Its reference diagonal block is $`I_D`$. The Schur complement of that block has 
 ```math
 S_{ij}=U_jU_i^\dagger-U_i^\dagger U_j,
 \qquad S_{ii}=0.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 A positive semidefinite block matrix with zero diagonal blocks has every off-diagonal block zero. For example, each two-block principal submatrix would otherwise have the form
@@ -52,7 +52,7 @@ Then
 \sigma=\frac1D\sum_{k=1}^D
 |\alpha^{(k)}\rangle\langle\alpha^{(k)}|
 \otimes|e_k\rangle\langle e_k|,
-\tag{3}
+\qquad\text{(3)}
 ```
 
 which is separable. If commutation fails, (2) makes the partial transpose nonpositive. This proves the lemma.
@@ -70,13 +70,13 @@ The marker subspace is spanned by $`|0\rangle,\ldots,|n-1\rangle`$. Let $`S|j\ra
 
 ```math
 \begin{aligned}
-K_0&=\sqrt{1-p}\bigl(|\varnothing\rangle\langle\varnothing|+S\bigr)
+K_0&=\sqrt{1-p}(|\varnothing\rangle\langle\varnothing|+S)
      +|f\rangle\langle f|,\\
-K_1&=\sqrt p\,|0\rangle\langle\varnothing|,\\
-F_j&=\sqrt p\,|f\rangle\langle j|,
-\qquad 0\le j<n.
+K_1&=\sqrt{p}\,|0\rangle\langle\varnothing|,\\
+F_j&=\sqrt{p}\,|f\rangle\langle j|,
+\qquad 0\le j\lt n.
+\qquad\text{(4)}
 \end{aligned}
-\tag{4}
 ```
 
 The target starts in $`|\varnothing\rangle`$. The controller is any pure state with occupied support $`\Pi`$ as in the [model](model.md#3-inputs-and-the-entanglement-task). No part of (4) depends on that support or its amplitudes.
@@ -110,14 +110,14 @@ Label a surviving tuple by the physical slot $`r`$ that contains its unique $`K_
 ```math
 |n-1-\pi^{-1}(r)\rangle,
 \qquad \sqrt{p(1-p)^{n-1}}.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 Define an $`n\times n`$ permutation unitary by
 
 ```math
 U_\pi|r\rangle=|n-1-\pi^{-1}(r)\rangle.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Summing over the inaccessible slot label $`r`$ gives the unnormalized marker block
@@ -126,14 +126,14 @@ Summing over the inaccessible slot label $`r`$ gives the unnormalized marker blo
 p(1-p)^{n-1}\sum_{\pi,\tau\in\Pi}
 \alpha_\pi\overline{\alpha_\tau}|\pi\rangle\langle\tau|
 \otimes U_\pi U_\tau^\dagger.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Its trace is
 
 ```math
 q=np(1-p)^{n-1}.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 The normalized marker state is exactly (1) with $`D=n`$.
@@ -146,7 +146,7 @@ Write $`P_\pi|r\rangle=|\pi(r)\rangle`$ for the natural permutation representati
 U_\pi U_{\pi_0}^\dagger
 =J P_{\pi^{-1}\pi_0}J^\dagger
 =J P_{(\pi_0^{-1}\pi)^{-1}}J^\dagger.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 The natural representation is faithful. Its relative matrices commute exactly when the relative permutations do. Lemma 2 therefore makes the marker state NPT whenever $`G_\Pi`$ is nonabelian.
@@ -161,10 +161,10 @@ In fact, the unconditional output is block diagonal in the empty, marker and fai
   \otimes|\varnothing\rangle\langle\varnothing|
  +q\sigma
  +R_C\otimes|f\rangle\langle f|,
-\tag{10}
+\qquad\text{(10)}
 ```
 
-where $`R_C\ge0`$ and $`\operatorname{Tr}R_C=1-(1-p)^n-q`$. Thus the NPT marker block is not canceled by other target sectors.
+where $`R_C\ge0`$ and $`\mathrm{Tr}R_C=1-(1-p)^n-q`$. Thus the NPT marker block is not canceled by other target sectors.
 
 ### Resources and the role of filtering
 
@@ -172,7 +172,7 @@ Choose $`p=1/n`$. Then
 
 ```math
 q=\left(1-\frac1n\right)^{n-1}>e^{-1},
-\tag{11}
+\qquad\text{(11)}
 ```
 
 with $`q\to e^{-1}`$. The inequality follows, for example, from
@@ -188,8 +188,8 @@ Take $`T=(\mathbb C^s)^{\otimes n}`$ with $`s\ge2`$, and define
 
 ```math
 \mathcal N(\rho)
-=\operatorname{Tr}_1(\rho)\otimes\frac{I_s}{s}.
-\tag{12}
+=\mathrm{Tr}_1(\rho)\otimes\frac{I_s}{s}.
+\qquad\text{(12)}
 ```
 
 The first register is discarded, the remaining registers shift left, and a maximally mixed register is appended. One Kraus representation is
@@ -199,14 +199,14 @@ K_{ab}=\frac1{\sqrt s}
 \sum_{w\in\{0,\ldots,s-1\}^{n-1}}
 |wa\rangle\langle bw|,
 \qquad 0\le a,b<s.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 It is immediate from (12), or from summing (13), that the map is trace preserving and
 
 ```math
-\mathcal N^n(X)=\operatorname{Tr}(X)\frac{I_{s^n}}{s^n}.
-\tag{14}
+\mathcal N^n(X)=\mathrm{Tr}(X)\frac{I_{s^n}}{s^n}.
+\qquad\text{(14)}
 ```
 
 Start the target in $`|0\rangle^{\otimes n}`$. During the first $`n`$ calls, every discarded register comes from this original input, so every nonzero tuple has all discarded labels $`b=0`$. For appended slot labels $`\boldsymbol a`$, order $`\pi`$ produces
@@ -222,7 +222,7 @@ Let $`V_\pi`$ rearrange words by this rule. The switch output is
 =s^{-n}\sum_{\pi,\tau\in\Pi}
 \alpha_\pi\overline{\alpha_\tau}|\pi\rangle\langle\tau|
 \otimes V_\pi V_\tau^\dagger.
-\tag{15}
+\qquad\text{(15)}
 ```
 
 To make the representation convention explicit, define

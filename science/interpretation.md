@@ -24,10 +24,10 @@ Controller–target separability follows directly from that old block formula. D
 \rho_{CT}^{\mathrm{out}}
 =\sum_t C_t\otimes|t\rangle\langle t|,
 \qquad C_t\ge0.
-\tag{1}
+\qquad\text{(1)}
 ```
 
-After absorbing each nonzero $`\operatorname{Tr}C_t`$ into a probability, this is a separable decomposition. This inference holds even for nonabelian supports and arbitrarily many orders. It is not a new depolarizer formula or a denial of their communication advantages.
+After absorbing each nonzero $`\mathrm{Tr}C_t`$ into a probability, this is a separable decomposition. This inference holds even for nonabelian supports and arbitrarily many orders. It is not a new depolarizer formula or a denial of their communication advantages.
 
 ### Pauli channels
 
@@ -42,7 +42,7 @@ The switch therefore preserves separability for arbitrary order supports and all
 Suppose every selected order places the same physical slot last, and that slot's channel is entanglement breaking. Then the joint process factors as
 
 ```math
-(\operatorname{id}_C\otimes\mathcal N)\circ\mathfrak S_{\mathrm{earlier}},
+(\mathrm{id}_C\otimes\mathcal N)\circ\mathfrak S_{\mathrm{earlier}},
 ```
 
 so the final local target channel destroys all $`C:T`$ entanglement. The earlier relative orders can still be nonabelian. For example, $`0123,0213,1023`$ all end in slot 3 while their relative permutations on the first three slots do not commute.
