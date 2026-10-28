@@ -85,8 +85,8 @@ The system has dimension $`3\times2`$. The established [Peres–Horodecki criter
 \begin{aligned}
 \rho_\eta\text{ is separable}&\iff 0\le\eta\le\eta_*,\\
 \rho_\eta\text{ is NPT}&\iff \eta_*<\eta\le1.
-\end{aligned}
 \qquad\text{(7)}
+\end{aligned}
 ```
 
 The admissible admixture is consequently

@@ -75,8 +75,8 @@ K_0&=\sqrt{1-p}\bigl(|\varnothing\rangle\langle\varnothing|+S\bigr)
 K_1&=\sqrt p\,|0\rangle\langle\varnothing|,\\
 F_j&=\sqrt p\,|f\rangle\langle j|,
 \qquad 0\le j<n.
-\end{aligned}
 \qquad\text{(4)}
+\end{aligned}
 ```
 
 The target starts in $`|\varnothing\rangle`$. The controller is any pure state with occupied support $`\Pi`$ as in the [model](model.md#3-inputs-and-the-entanglement-task). No part of (4) depends on that support or its amplitudes.
