@@ -33,7 +33,7 @@ The [uniform noisy separation](noisy_separation.md) extends the concrete channel
 
 | Statement | Authoritative location |
 |---|---|
-| All three two-bit allocations of the retained protocol are separable for $\lvert\delta\rvert\le0.2$ | [Uniform theorem](noisy_separation.md#uniform-separation) and [exact grid](noisy_separation.md#exact-grid-certificate) |
+| All three two-bit allocations of the retained protocol are separable for $`\lvert\delta\rvert\le0.2`$ | [Uniform theorem](noisy_separation.md#uniform-separation) and [exact grid](noisy_separation.md#exact-grid-certificate) |
 | The specified accepted four-call pair is NPT with strictly positive probability and fidelity margins on the same interval | [Continuity proof](noisy_separation.md#continuity-proof) |
 | Resource and conditioning differences remain charged | [Operational meaning](noisy_separation.md#operational-meaning) |
 | Arbitrary-controller recovery optimum and its larger tilted interval | [Sister frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md) and [tilted readout theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md) |

@@ -31,14 +31,14 @@ A uniform controller on chronological orders $`012,021,102`$ and target $`|0\ran
 
 ## A robust connection to heralded recovery
 
-The [shared-noise theorem](science/noisy_separation.md#uniform-separation) compares two specified protocols on the same raw measure–prepare channel family with a 1% depolarizing admixture. Every physical control bit has an independent 10% phase-flip probability. Uniformly over axis tilts $|\delta|\le0.2$ radians:
+The [shared-noise theorem](science/noisy_separation.md#uniform-separation) compares two specified protocols on the same raw measure–prepare channel family with a 1% depolarizing admixture. Every physical control bit has an independent 10% phase-flip probability. Uniformly over axis tilts $`|\delta|\le0.2`$ radians:
 
 | Protocol | Certified output |
 |---|---|
-| Three chronological orders $012,021,102$, uniform controller, target $\lvert0\rangle$, any three occupied two-bit codewords | The unconditional retained $C:T$ state is separable for every assignment of the three orders to those codewords. |
-| Four raw calls, the specified eight orders and three-bit physical encoding, fixed P2 accepted branch, Bell input | The accepted $R:T$ state is NPT, with $0.035<p<0.095$ and Bell fidelity $F>101/190$. |
+| Three chronological orders $`012,021,102`$, uniform controller, target $`\lvert0\rangle`$, any three occupied two-bit codewords | The unconditional retained $`C:T`$ state is separable for every assignment of the three orders to those codewords. |
+| Four raw calls, the specified eight orders and three-bit physical encoding, fixed P2 accepted branch, Bell input | The accepted $`R:T`$ state is NPT, with $`0.035<p<0.095`$ and Bell fidelity $`F>101/190`$. |
 
-The proof reconstructs 249 exact retained-state partial-transpose certificates and 83 exact recovery witnesses, then extends the strict margins to the whole interval. Its positive lower bound acts on the occupied $3\times2$ support. The [full statement and proof](science/noisy_separation.md) keep the bipartitions, conditioning and resources explicit: three versus four calls, two versus three controller bits, and unconditional versus accepted outputs. This establishes a simultaneous robust example for these protocols.
+The proof reconstructs 249 exact retained-state partial-transpose certificates and 83 exact recovery witnesses, then extends the strict margins to the whole interval. Its positive lower bound acts on the occupied $`3\times2`$ support. The [full statement and proof](science/noisy_separation.md) keep the bipartitions, conditioning and resources explicit: three versus four calls, two versus three controller bits, and unconditional versus accepted outputs. This establishes a simultaneous robust example for these protocols.
 
 The sister repository [Quantum Order Distillation](https://github.com/GoGoKo699/Quantum-Order-Distillation) owns the [common raw-slot model](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md), [controller characterization](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md), [full recovery frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md) and [tilted optimality proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md). Both tracks use the same Watrous educational anchor. Retained controller–target entanglement and recovered reference–target entanglement remain separate tasks.
 

@@ -361,7 +361,7 @@ The shared raw slot measures the target’s Z axis, prepares the opposite states
 
 ```math
 \mathcal N_{\epsilon,\theta}
-=(1-\epsilon)\operatorname{Ad}_{R_y(\theta)}\circ\mathcal D_Z
+=(1-\epsilon)\mathrm{Ad}_{R_y(\theta)}\circ\mathcal D_Z
 +\epsilon\Delta.
 ```
 
@@ -387,7 +387,7 @@ An exact LDL decomposition proves this inequality by positive rational pivots. T
 The recovery experiment uses four raw slots, the sister project’s eight physical codes, uniform preparation and the fixed P2 signed herald. It keeps a reference R initially entangled with T. Its accepted, unnormalized Bell output is $`\tau`$. Define
 
 ```math
-p=\operatorname{Tr}\tau,\qquad
+p=\mathrm{Tr}\tau,\qquad
 f=\langle\Phi|\tau|\Phi\rangle,\qquad
 w=f-\frac p2.
 ```
