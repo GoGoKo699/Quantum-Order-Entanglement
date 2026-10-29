@@ -14,6 +14,7 @@ The [noisy separation](../science/noisy_separation.md) adds a different statemen
 |---|---|---|
 | [Roszak (2018)](#roszak2018) | Conditional-unitary commutation criterion for pure-dephasing entanglement, including NPT when it fails | Supplies the abstract state criterion; the identical-channel realization must still be constructed |
 | [Chiribella et al. (2021)](#chiribella2021) | Explicit separability of an identical two-slot self-switch | Supplies the two-call obstruction; more than two permutation orders are outside that paper's stated scope |
+| [Das and Bandyopadhyay (2022)](#das-bandyopadhyay2022) | A switch of two switches can increase the probability of perfect heralded qubit communication | Establishes the broader communication mechanism; the fixed three-call frontier and mixed-budget optimum require their own converse |
 | [Aslanbaş et al. (2026)](#aslanbas2026) | Product Kraus representation when two coherently controlled composed channels coincide | Supplies the two-history Kraus-freedom mechanism |
 | [Procopio et al. (2019)](#procopio2019) | Generalized permutation switching and depolarizer interference blocks | Supplies the resource formalism and a channel-specific class that remains controller–target separable |
 | [Sazim et al.; Wilson–Chiribella (2021)](#permutation-structure-for-depolarizers) | Cyclic cosets and permutation-cycle structure for depolarizer communication | Group organization and cyclic/noncyclic distinctions are already established |
@@ -113,6 +114,18 @@ Section IV, Eqs. (28)–(30), of the identified preprint defines the inherited f
 Section IV of the journal version, published 5 December 2025, gives the inherited four-call Pauli purification branch. Appendix A compares selected permutation constructions; it does not establish the arbitrary-controller fidelity frontier. Section VII's extension by twirling changes the supplied channel resource. The present comparison retains the raw slots, excludes per-slot wrappers, and allows only a final herald-dependent target unitary.
 
 The sister repository [Quantum Order Distillation](https://github.com/GoGoKo699/Quantum-Order-Distillation) owns the complete [controller reduction](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md), [orthogonal frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md), and [tilted readout proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md). Those conclusions optimize accepted corrected Bell fidelity on the specified physical eight-order architecture. Here the [separation theorem](../science/noisy_separation.md) uses one fixed real recovery branch and directly certifies the retained state; the optimum does not classify every possible retained output. Fidelity at or below one half is not used as a converse entanglement test for arbitrary complex-controller outputs.
+
+<a id="das-bandyopadhyay2022"></a>
+
+## Fixed-channel recovery and randomized call budgets
+
+**Debarshi Das and Somshubhro Bandyopadhyay**, *Quantum communication using a quantum switch of quantum switches*, **Proceedings of the Royal Society A 478**(2266), 20220231 (2022). [DOI](https://doi.org/10.1098/rspa.2022.0231); [arXiv:2111.08266v3](https://arxiv.org/abs/2111.08266v3), revised 6 October 2022 and identified by its authors as the published version; [institutional record](https://discovery.ucl.ac.uk/id/eprint/10156914/).
+
+This work shows that coherently ordering two quantum switches can increase the success probability of perfect qubit communication over their individual use; it also identifies cases without an advantage. Together with [Chiribella et al.](#chiribella2021), it establishes the earlier communication mechanism. Neither the presence of extra coherent orders nor heralded recovery alone is the additional conclusion claimed here.
+
+The sister project's [native three-call frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md) fixes the rank-deficient channel $`K_0=|+\rangle\langle0|`$, $`K_1=|-\rangle\langle1|`$ and global logical order dephasing, with all six three-slot orders available. It gives a complete success–half-diamond-error frontier and matching controller converse. Its [randomized cost theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md) optimizes expected noisy calls across fresh one-, two- and three-call trials, including unequal logical noise. Total accepted success is input independent even though arbitrary fine outcomes need not be.
+
+These are fixed-channel target-only recovery results. They do not classify retained controller–target entanglement or replace this repository's three-order versus four-call [noisy separation](../science/noisy_separation.md). The rank-deficient three-call benchmark, full-rank four-call theory and physical-local-noise Bell-fidelity frontier have different hypotheses. Conditional scalar-dephasing duration comparisons are not hardware or capacity certifications, and the primary-source comparison does not establish publication priority.
 
 <a id="control-noise"></a>
 

@@ -42,6 +42,8 @@ The proof reconstructs 249 exact retained-state partial-transpose certificates a
 
 The sister repository [Quantum Order Distillation](https://github.com/GoGoKo699/Quantum-Order-Distillation) owns the [common raw-slot model](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md), [controller characterization](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md), [full recovery frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md) and [tilted optimality proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md). Both tracks use the same Watrous educational anchor. Retained controller–target entanglement and recovered reference–target entanglement remain separate tasks.
 
+The sister track also gives a [complete six-order three-call recovery frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md) for the fixed rank-two measure-$`Z`$/prepare-$`X`$ channel under global logical dephasing, with an [exact randomized one-/two-/three-call cost envelope](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md). It evaluates the accepted target-only channel after corrected fine labels are averaged. That half-diamond recovery task is separate from retaining $`C:T`$, and from the four-call full-rank family with physical local noise.
+
 ## Read the science
 
 Start with the [scientific account](science/README.md), or use a direct route below.

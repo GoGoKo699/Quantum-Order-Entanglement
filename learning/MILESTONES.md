@@ -397,13 +397,13 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 **Central question:** How does optimizing recovery relate to, but differ from, classifying retained entanglement?
 
-**Understanding target:** Describe the sister project’s complete controller feasible set, physical three-X readout frontier, and certified tilted optimality interval. Distinguish a fidelity upper bound from a separability theorem: optimized Bell fidelity at most one half does not prove every complex-controller Choi output separable.
+**Understanding target:** Describe the sister project’s complete controller feasible set, physical three-X readout frontier, and certified tilted optimality interval. Distinguish that full-rank, four-call, local-noise Bell frontier from the six-order, three-call rank-deficient benchmark with global dephasing and half-diamond error. In the latter, the accepted target-only channel averages fine outcome labels, and only aggregate success is required input independent. Distinguish a fidelity upper bound from a separability theorem: optimized Bell fidelity at most one half does not prove every complex-controller Choi output separable.
 
 **Dependencies and story role:** M07, M21–M22 and M26. Places the entanglement track beside the independently proved recovery optimization.
 
 **Conceptual connection:** An optimized scalar objective can settle a recovery tradeoff without classifying every possible entanglement output.
 
-**Source pointers:** Watrous §§1.2.3 and 3.2; [controller feasibility](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md#controller-feasibility); [frontier theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md#frontier-theorem); [tilted optimality](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md#tilted-optimality).
+**Source pointers:** Watrous §§1.2.3 and 3.2; [controller feasibility](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md#controller-feasibility); [frontier theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md#frontier-theorem); [tilted optimality](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md#tilted-optimality); [native three-call benchmark](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md#native-three-call-frontier).
 
 <a id="m28"></a>
 
@@ -429,13 +429,13 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 **Central question:** Which scientific conclusions are inherited, analytically proved, exactly certified or numerically checked?
 
-**Understanding target:** Credit the conditional-unitary criterion, earlier two-history results and established PPT theorem. Separate the project’s constrained realizations and order-support classification from the new exact grid-plus-continuity comparison. Explain what original verification and the independent joint rebuild establish, including the limits of sampled examples and bounded literature review.
+**Understanding target:** Credit the conditional-unitary criterion, earlier two-history results and established PPT theorem. Separate the project’s constrained realizations and order-support classification from the new exact grid-plus-continuity comparison. Explain what original verification and the independent joint rebuild establish, including the limits of sampled examples and bounded literature review. Explain the sister benchmark’s exact fresh-trial cost closure at a fixed half-diamond tolerance, and distinguish its conditional logical-noise duration model from physical local-bit dephasing.
 
 **Dependencies and story role:** M12–M28. Integrates the source and evidence structure before the final synthesis.
 
 **Conceptual connection:** Attribution concerns what conclusion is inherited; verification concerns which assertion was actually checked. Neither is supplied by shared terminology or numerical agreement.
 
-**Source pointers:** Watrous foundations through the [bridge](WATROUS_BRIDGE.md); [related work](../references/RELATED_WORK.md); [verification guide](../verification/README.md); [scientific overview](../science/README.md).
+**Source pointers:** Watrous foundations through the [bridge](WATROUS_BRIDGE.md); [related work](../references/RELATED_WORK.md); [verification guide](../verification/README.md); [scientific overview](../science/README.md); [randomized call-cost closure](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md#convex-call-cost); [duration assumptions](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md#duration-model).
 
 <a id="m30"></a>
 
@@ -445,7 +445,7 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 **Central question:** What complete story connects relative order structure, physical realization and robustly different endpoints?
 
-**Understanding target:** Explain the abelian universal obstruction, the nonabelian existential realization, the minimal entanglement-breaking example and its robustness, and the tilted shared-family separation. State why retained C:T entanglement, conditional R:T recovery, communication capacity and causal-structure certification remain distinct tasks.
+**Understanding target:** Explain the abelian universal obstruction, the nonabelian existential realization, the minimal entanglement-breaking example and its robustness, the tilted shared-family separation, and the separate native recovery cost benchmark. State why retained C:T entanglement, conditional R:T recovery, communication capacity and causal-structure certification remain distinct tasks.
 
 **Dependencies and story role:** M10–M29. Phase synthesis: joins algebra, realizability, minimality, controller-noise geometry, evidence and the limits of transfer.
 

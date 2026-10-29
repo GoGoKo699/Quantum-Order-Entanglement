@@ -113,3 +113,18 @@ The sister repository owns the shared [routing and noise model](https://github.c
 [controller optimization](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md),
 [orthogonal frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md), and
 [tilted optimality proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md).
+
+## Sister native recovery benchmark
+
+The sister repository owns the [native one-/two-/three-call verification suite](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/verification/native_benchmark/README.md),
+its [three-call frontier proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md#native-three-call-frontier),
+and the [randomized call-cost and noise account](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md#convex-call-cost).
+Its exact invariance checker requires only the standard library; its complete
+finite suite has separate NumPy/SciPy/Matplotlib pins and documented commands.
+The target-only half-diamond endpoint averages fine controller labels. It is
+distinct from this repository's retained controller–target state and the
+four-call accepted reference–target witness. The fixed rank-deficient channel
+and global logical-noise assumption also differ from the full-rank tilted
+physical local-noise separation above. Follow the sister guide for its exact
+and numerical coverage rather than interpreting retained entanglement as a
+recovery certificate.

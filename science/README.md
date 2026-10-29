@@ -40,6 +40,10 @@ The [uniform noisy separation](noisy_separation.md) extends the concrete channel
 
 The separation proof is authoritative here. The common raw-slot/controller foundation and recovery optimization are authoritative in Quantum Order Distillation. These shared results are credited once across the family; the original universal order-support theorem and exact-recovery threshold retain their distinct hypotheses and conclusions.
 
+## Fixed-channel recovery benchmark
+
+The sister [native three-call theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md#native-three-call-frontier) and [randomized cost theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md#convex-call-cost) concern the rank-two channel of the minimal example, all six permutation labels and global logical controller dephasing. Their output averages corrected fine labels, retaining only aggregate acceptance; their exact objective is target-only half-diamond error with fresh-trial cost. These hypotheses differ from both the unconditional retained entanglement criterion and the physical-local-noise separation above. The native attaining channels establish the Bell-to-diamond equality used there, rather than assuming it for arbitrary accepted outputs.
+
 ## Learning route
 
 The [Watrous bridge](../learning/WATROUS_BRIDGE.md) connects the selected textbook's channels, separable maps and permutation operators to this model. The [30-milestone map](../learning/MILESTONES.md) organizes the common understanding targets from local ingredients to the complete result. These explanations support the reading route above; the topic pages retain the authoritative statements and full proofs.
