@@ -149,7 +149,7 @@ and
 
 ```math
 w(\delta)>\frac3{1000},\qquad
-\frac7{200}<p(\delta)<\frac{19}{200},\qquad
+\frac7{200}\lt p(\delta)\lt \frac{19}{200},\qquad
 F(\delta)>\frac{101}{190}.
 ```
 
@@ -231,7 +231,7 @@ The [complete rational ledger](../verification/certificates/joint_tilt_certifica
 |---|---:|---|
 | Retained-state partial transpose | 83 angles × 3 allocations = 249 | $`\rho^{\Gamma_T}(\delta_k)-I_6/100\succ0`$ |
 | Accepted Bell witness | 83 | $`f_k-p_k/2>1/125`$ |
-| Accepted probability | 83 | $`1/25<p_k<9/100`$ |
+| Accepted probability | 83 | $`1/25\lt p_k\lt 9/100`$ |
 
 Positive definiteness is certified by exact $`LDL^T`$ factorization of each shifted six-dimensional matrix. Every diagonal pivot is positive, and the factorization reconstructs the matrix exactly. A pivot is not an eigenvalue lower bound; the shift $`I_6/100`$ is the rigorous eigenvalue margin. The smallest grid witness occurs at $`k=-41`$ and equals
 
@@ -335,10 +335,10 @@ The success flag is an effect on normalized states. Since the difference of the 
 
 ```math
 |p(\delta)-p_k|\le\frac1{200},\qquad
-\frac1{25}-\frac1{200}<p(\delta)<\frac9{100}+\frac1{200},
+\frac1{25}-\frac1{200}\lt p(\delta)\lt \frac9{100}+\frac1{200},
 ```
 
-which is $`7/200<p<19/200`$. Combining the two strict margins gives
+which is $`7/200\lt p\lt 19/200`$. Combining the two strict margins gives
 
 ```math
 F=\frac12+\frac wp
@@ -364,7 +364,7 @@ Every separable, possibly subnormalized, two-qubit state obeys $`\langle\Phi|\ta
 The probability bounds charge rejected trials. If a fresh Bell pair is supplied on each independent attempt, the expected number of slot calls per accepted pair satisfies
 
 ```math
-\frac{800}{19}<\frac4p<\frac{800}{7}.
+\frac{800}{19}\lt \frac4p\lt \frac{800}{7}.
 ```
 
 A failed attempt is not assumed to preserve an unknown input for another try. The conclusion is therefore a heralded entanglement-distribution statement with fresh-input costs, not an unassisted quantum-capacity statement.

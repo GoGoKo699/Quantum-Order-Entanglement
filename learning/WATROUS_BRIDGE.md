@@ -392,7 +392,7 @@ f=\langle\Phi|\tau|\Phi\rangle,\qquad
 w=f-\frac p2.
 ```
 
-Every separable two-qubit output satisfies $`f\le p/2`$, so $`w>0`$ certifies entanglement. The real Y-covariant accepted branch has success effect $`pI`$; its normalized Bell fidelity is $`F=f/p`$ and success is input independent. This does not assert the same property for every possible complex controller. The 83 exact rational contractions certify $`w>1/125`$ and $`1/25<p<9/100`$ on the grid. The [certificate derivation](../science/noisy_separation.md#exact-grid-certificate) fixes the factors arising from controller amplitudes and Bell normalization.
+Every separable two-qubit output satisfies $`f\le p/2`$, so $`w>0`$ certifies entanglement. The real Y-covariant accepted branch has success effect $`pI`$; its normalized Bell fidelity is $`F=f/p`$ and success is input independent. This does not assert the same property for every possible complex controller. The 83 exact rational contractions certify $`w>1/125`$ and $`1/25\lt p\lt 9/100`$ on the grid. The [certificate derivation](../science/noisy_separation.md#exact-grid-certificate) fixes the factors arising from controller amplitudes and Bell normalization.
 
 To reach every angle, factor the slot through a common Stinespring isometry followed by $`R_y(\theta)`$. Telescoping the product of $`r`$ slot isometries, then tracing environments and applying the same control noise, gives
 
@@ -408,7 +408,7 @@ The grid covers $`[-.2,.2]`$ radians with nearest-point distance at most $`1/400
 \bigl(\rho_{CT}^{(\ell)}(\delta)\bigr)^{\Gamma_T}
 \succ\frac{I_6}{400},\qquad
 w>\frac3{1000},\qquad
-\frac7{200}<p<\frac{19}{200},\qquad
+\frac7{200}\lt p\lt \frac{19}{200},\qquad
 F>\frac{101}{190}.
 ```
 

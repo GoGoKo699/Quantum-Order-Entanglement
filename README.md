@@ -36,7 +36,7 @@ The [shared-noise theorem](science/noisy_separation.md#uniform-separation) compa
 | Protocol | Certified output |
 |---|---|
 | Three chronological orders $`012,021,102`$, uniform controller, target $`\lvert0\rangle`$, any three occupied two-bit codewords | The unconditional retained $`C:T`$ state is separable for every assignment of the three orders to those codewords. |
-| Four raw calls, the specified eight orders and three-bit physical encoding, fixed P2 accepted branch, Bell input | The accepted $`R:T`$ state is NPT, with $`0.035<p<0.095`$ and Bell fidelity $`F>101/190`$. |
+| Four raw calls, the specified eight orders and three-bit physical encoding, fixed P2 accepted branch, Bell input | The accepted $`R:T`$ state is NPT, with $`0.035\lt p\lt 0.095`$ and Bell fidelity $`F>101/190`$. |
 
 The proof reconstructs 249 exact retained-state partial-transpose certificates and 83 exact recovery witnesses, then extends the strict margins to the whole interval. Its positive lower bound acts on the occupied $`3\times2`$ support. The [full statement and proof](science/noisy_separation.md) keep the bipartitions, conditioning and resources explicit: three versus four calls, two versus three controller bits, and unconditional versus accepted outputs. This establishes a simultaneous robust example for these protocols.
 

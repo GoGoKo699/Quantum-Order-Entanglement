@@ -79,7 +79,7 @@ The generalized switch itself is supplied as a nontrivial controller–target pr
 
 ## The shared-noise comparison
 
-The [uniform separation theorem](noisy_separation.md#uniform-separation) makes one part of this distinction quantitative. With a 1% depolarizing admixture, 10% independent phase flips per physical controller bit and $`|\delta|\le0.2`$ radians, the fixed three-order retained experiment is separable for all three inequivalent two-bit allocations. On the same channel/noise interval, a fixed four-call accepted branch produces an NPT reference–target pair with $`0.035<p<0.095`$ and $`F>101/190`$.
+The [uniform separation theorem](noisy_separation.md#uniform-separation) makes one part of this distinction quantitative. With a 1% depolarizing admixture, 10% independent phase flips per physical controller bit and $`|\delta|\le0.2`$ radians, the fixed three-order retained experiment is separable for all three inequivalent two-bit allocations. On the same channel/noise interval, a fixed four-call accepted branch produces an NPT reference–target pair with $`0.035\lt p\lt 0.095`$ and $`F>101/190`$.
 
 The [proof](noisy_separation.md#continuity-proof) combines exact rational certificates with a continuity estimate. Its retained-state positive lower bound acts on the occupied six-dimensional support; unused physical codewords retain zero eigenvalues. The [resource table](noisy_separation.md#operational-meaning) charges three versus four calls and two versus three controller bits, as well as unconditional versus accepted outputs. Rejected attempts require fresh inputs for the stated recovery cost.
 

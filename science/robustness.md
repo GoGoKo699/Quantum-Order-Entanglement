@@ -73,7 +73,7 @@ so the threshold is the unique root in $`[0,1]`$ of
 ```math
 2\eta_*^3-7\eta_*^2+4=0,
 \qquad
-0.8724474860298<\eta_*<0.8724474860299.
+0.8724474860298\lt \eta_*\lt 0.8724474860299.
 \qquad\text{(6)}
 ```
 
@@ -83,8 +83,8 @@ The system has dimension $`3\times2`$. The established [Peres–Horodecki criter
 
 ```math
 \begin{aligned}
-\rho_\eta\text{ is separable}&\iff 0\le\eta\le\eta_*,\\
-\rho_\eta\text{ is NPT}&\iff \eta_*<\eta\le1.
+\rho_\eta\text{ is separable}&\Leftrightarrow 0\le\eta\le\eta_*,\\
+\rho_\eta\text{ is NPT}&\Leftrightarrow \eta_*\lt \eta\le1.
 \qquad\text{(7)}
 \end{aligned}
 ```
@@ -92,7 +92,7 @@ The system has dimension $`3\times2`$. The established [Peres–Horodecki criter
 The admissible admixture is consequently
 
 ```math
-1-\eta<1-\eta_*
+1-\eta\lt 1-\eta_*
 \simeq0.127552513970178.
 ```
 
@@ -116,7 +116,7 @@ For every separable state $`\sigma`$, $`\mathrm{Tr}(W\sigma)\ge0`$. The Schmidt 
 It follows that
 
 ```math
-\|\widetilde\rho-\rho\|_1<\frac1{48}
+\|\widetilde\rho-\rho\|_1\lt \frac1{48}
 \qquad\text{(8)}
 ```
 
