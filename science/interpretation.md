@@ -77,8 +77,20 @@ The number of coherent alternatives is a separate resource from the number of ca
 
 The generalized switch itself is supplied as a nontrivial controller–target process. These results do not compare it with unrestricted circuits containing arbitrary controlled gates or protected target memories. They also do not infer device-independent causal nonseparability from output entanglement. The [model](model.md#4-supplied-resources-and-scope) states exactly which operations are being compared.
 
+## The shared-noise comparison
+
+The [uniform separation theorem](noisy_separation.md#uniform-separation) makes one part of this distinction quantitative. With a 1% depolarizing admixture, 10% independent phase flips per physical controller bit and $`|\delta|\le0.2`$ radians, the fixed three-order retained experiment is separable for all three inequivalent two-bit allocations. On the same channel/noise interval, a fixed four-call accepted branch produces an NPT reference–target pair with $`0.035\lt p\lt 0.095`$ and $`F>101/190`$.
+
+The [proof](noisy_separation.md#continuity-proof) combines exact rational certificates with a continuity estimate. Its retained-state positive lower bound acts on the occupied six-dimensional support; unused physical codewords retain zero eigenvalues. The [resource table](noisy_separation.md#operational-meaning) charges three versus four calls and two versus three controller bits, as well as unconditional versus accepted outputs. Rejected attempts require fresh inputs for the stated recovery cost.
+
+The sister project's [frontier theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md#frontier-theorem) optimizes a different task: corrected Bell fidelity at a specified accepted probability over arbitrary physical controllers in the fixed four-call architecture. It does not optimize retained $`C:T`$ entanglement. In particular, a Bell-fidelity bound at or below one half is not a separability classification for arbitrary complex-controller outputs. The comparison here remains specific to the stated retained protocol, rather than a universal three-call impossibility claim.
+
 ## Scientific conclusion
 
 The obstruction is a property of the order family, while its violation must be converted into a physical channel realization. Abelian relative orders always admit a product-Kraus description. Nonabelian relative orders admit an explicit NPT realization, and the smallest example survives even when each slot is entanglement breaking and the complete definite-order target channel is fully depolarizing.
 
 The general result relies on established Kraus freedom, simultaneous diagonalization and conditional-unitary entanglement criteria. Its content is the complete constrained order-support boundary and the channels that attain it. The [related-work account](../references/RELATED_WORK.md) separates those statements from their inherited ingredients.
+
+## Averaging recovery labels changes the task
+
+The sister [six-order native recovery benchmark](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md) allows input-dependent fine outcomes while requiring scalar trace preservation of the total accepted map. It averages their corrected outputs before evaluating target-only half-diamond error. Retaining those labels as a quantum or classical output defines another comparison, so this optimized recovery result does not classify retained $`C:T`$ entanglement. Its [fresh-trial cost envelope](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md) also differs from a capacity, batch-coding or collective-distillation rate.

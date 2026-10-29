@@ -59,7 +59,7 @@ which is separable. If commutation fails, (2) makes the partial transpose nonpos
 
 ## The linear-dimension channel
 
-Fix $`n\ge2`$ and $`0<p<1`$. Use target basis
+Fix $`n\ge2`$ and $`0\lt p\lt 1`$. Use target basis
 
 ```math
 |\varnothing\rangle,\quad |0\rangle,\ldots,|n-1\rangle,
@@ -176,9 +176,9 @@ q=\left(1-\frac1n\right)^{n-1}>e^{-1},
 ```
 
 with $`q\to e^{-1}`$. The inequality follows, for example, from
-$`\log(1-x)>-x/(1-x)`$ for $`0<x<1`$. The target dimension is $`n+2`$, and the number of occupied control basis states is $`|\Pi|`$.
+$`\log(1-x)>-x/(1-x)`$ for $`0\lt x\lt 1`$. The target dimension is $`n+2`$, and the number of occupied control basis states is $`|\Pi|`$.
 
-The probability (11) is a useful property of a local entanglement-revealing filter. It is not a uniform lower bound on the amount of entanglement: supported control amplitudes may approach zero. For $`n\ge2`$ and $`0<p<1`$, channel (4) is not entanglement breaking. On inputs supported in the marker space, projecting the output back onto that space gives $`(1-p)S\rho S^\dagger`$. This nonzero local-unitary branch preserves entanglement with a reference. The [separate qubit construction](qubit_example.md) establishes that entanglement-breaking slots attain the minimum of three calls and three alternatives.
+The probability (11) is a useful property of a local entanglement-revealing filter. It is not a uniform lower bound on the amount of entanglement: supported control amplitudes may approach zero. For $`n\ge2`$ and $`0\lt p\lt 1`$, channel (4) is not entanglement breaking. On inputs supported in the marker space, projecting the output back onto that space gives $`(1-p)S\rho S^\dagger`$. This nonzero local-unitary branch preserves entanglement with a reference. The [separate qubit construction](qubit_example.md) establishes that entanglement-breaking slots attain the minimum of three calls and three alternatives.
 
 ## Complete erasure in every definite order
 
@@ -198,7 +198,7 @@ The first register is discarded, the remaining registers shift left, and a maxim
 K_{ab}=\frac1{\sqrt s}
 \sum_{w\in\{0,\ldots,s-1\}^{n-1}}
 |wa\rangle\langle bw|,
-\qquad 0\le a,b<s.
+\qquad 0\le a,b\lt s.
 \qquad\text{(13)}
 ```
 

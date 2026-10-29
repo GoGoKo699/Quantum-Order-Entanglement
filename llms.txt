@@ -96,3 +96,12 @@ Essential distinctions:
 - The selected textbook supplies foundations. The bridge identifies local
   explanations and research-level dependencies; primary research sources are
   not additional educational anchors.
+
+Shared physical-noise route:
+- science/noisy_separation.md: authoritative complete uniform CT-separability / accepted RT-NPT proof; raw tilted EB family, physical noise, both protocols, three encodings, 249 CT+83 RT exact grid obligations, continuity and charged costs.
+- verification/audit_verify.py --root verification/certificates --rebuild: complete independent shared-certificate and polynomial rebuild.
+- Sister foundation and optimization: https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md ; science/controller_optimization.md ; science/recovery_frontier.md ; science/tilted_readout.md in that repository.
+
+The separation holds for |delta|<=.2 radians; the sister tilted-optimality interval is |tan(delta/2)|<=1/5. CT positivity is strict only on occupied six-dimensional support. Protocols have different calls, controller bits, bipartitions and conditioning; this is not a universal retained-protocol no-go or optimized equal-resource separation. Arbitrary-controller Bell fidelity<=1/2 does not classify all outputs as separable. Both projects use Watrous as their sole educational anchor and keep exactly30 distinct project-defined milestones each.
+
+The sister https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md and https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md additionally solve the rank-two M, all-six-order, global-dephasing target-only half-diamond benchmark and randomized fresh1/2/3 expectedcallcost. Corrected fine labels are averaged; only aggregate acceptance is required input independent. Keep that output promise distinct from retained C:T and from the fullrank physical-local-noise fourcall Bellfrontier. https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/verification/native_benchmark/README.md owns reproduction.
