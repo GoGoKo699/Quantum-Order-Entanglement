@@ -6,6 +6,8 @@ The result proved here is the [order-support criterion](../science/order_criteri
 
 The conditional-unitary entanglement criterion, the two-history obstruction, the generalized-switch resource, and prior uses of three identical channels are established ingredients. The comparisons below separate them from the constrained architecture statement. They are a targeted account of the closest inspected work, not an exhaustive priority claim.
 
+The [noisy separation](../science/noisy_separation.md) adds a different statement: for a specified full-rank measure–prepare family and physical local phase noise, a retained three-order output is separable throughout a certified tilt interval while one accepted four-call reference–target output is entangled. This compares specified protocols and different bipartitions; it is not a universal retained-control obstruction or an equal-resource optimum.
+
 ## Comparison map
 
 | Source | Established result used or compared | Relation to the present result |
@@ -16,6 +18,9 @@ The conditional-unitary entanglement criterion, the two-history obstruction, the
 | [Procopio et al. (2019)](#procopio2019) | Generalized permutation switching and depolarizer interference blocks | Supplies the resource formalism and a channel-specific class that remains controller–target separable |
 | [Sazim et al.; Wilson–Chiribella (2021)](#permutation-structure-for-depolarizers) | Cyclic cosets and permutation-cycle structure for depolarizer communication | Group organization and cyclic/noncyclic distinctions are already established |
 | [Goldberg et al. (2023)](#goldberg2023) | Three identical noisy channels in three coherent order alternatives for metrology | The three-slot setup alone is not new; the retained entanglement question is different |
+| [Kechrimparis et al. (2024, 2025)](#nested-switch-recovery) | Nested four-slot architecture and Pauli-channel purification | Supplies the recovery router and ideal branch; the noisy raw-slot optimization is developed in the sister project |
+| [Molitor et al. (2024)](#control-noise) | Open-control two-slot switching, with noise-dependent accepted states and probabilities | Establishes prior control-noise analysis; its protected outcomes prevent a blanket noisy-control no-go claim |
+| [Regula and Takagi (2021)](#positive-components) | An unwanted positive component that survives acceptance obstructs perfect distillation | Supplies the obstruction principle; the sister project's routing proof establishes that survival for strict Schur noise |
 
 <a id="roszak2018"></a>
 
@@ -46,6 +51,8 @@ Its communication results also show why controller–target entanglement and pre
 Section III.4, Eqs. (62)–(70), uses unitary freedom of Kraus representations when the two composed channels agree. Diagonalizing the relative Kraus transformation gives product Kraus operators for the coherently controlled process. Applying this reasoning to two orders of identical slots is an inherited implication.
 
 The [abelian sufficiency proof](../science/order_criterion.md#proof-of-abelian-sufficiency) simultaneously diagonalizes a family of relative Kraus-index permutations. The converse requires an explicit channel realizing the noncommuting side; equality of the definite-order target channels does not supply that construction.
+
+The two-slot commuting-channel result also does not determine the three-order noisy retained state used in [the separation theorem](../science/noisy_separation.md). Its separability is established directly for the stated input, uniform preparation and each of the three two-bit encodings. The accepted four-call reference–target state is a separate experiment with a different bipartition and conditioning.
 
 <a id="generalized-switches"></a>
 
@@ -92,6 +99,40 @@ Separability implies a positive partial transpose. This necessary condition cert
 **Michał Horodecki, Paweł Horodecki and Ryszard Horodecki**, *Separability of mixed states: necessary and sufficient conditions*, **Physics Letters A 223**, 1–8 (1996). [DOI](https://doi.org/10.1016/S0375-9601(96)00706-2); [arXiv:quant-ph/9605038v2](https://arxiv.org/abs/quant-ph/9605038v2).
 
 PPT is also sufficient for separability in $`2\times2`$ and $`2\times3`$. The [exact robustness threshold](../science/robustness.md#exact-separability-transition) uses this inherited result for the $`3\times2`$ output. The larger-dimensional construction relies on NPT to establish entanglement and does not infer separability from numerical PPT checks.
+
+<a id="nested-switch-recovery"></a>
+
+## Nested-switch recovery and the raw-slot boundary
+
+**Spiros Kechrimparis, James Moran, Athena Karsa, Changhyoup Lee and Hyukjoon Kwon**, *Enhancing quantum state discrimination with indefinite causal order*, **New Journal of Physics 26**, 123030 (2024). [DOI](https://doi.org/10.1088/1367-2630/ada05e); [arXiv:2406.19373v1](https://arxiv.org/html/2406.19373v1).
+
+Section IV, Eqs. (28)–(30), of the identified preprint defines the inherited four-slot nested-switch architecture. The branch-diagonal form following it uses a Kraus commutator/anticommutator exclusivity condition satisfied by Pauli channels. This condition is not automatic for the raw measure–prepare family used in the noisy comparison. Appendix D studies a particular entangled control construction rather than arbitrary-controller optimality.
+
+**Spiros Kechrimparis, James Moran and Hyukjoon Kwon**, *Probabilistic channel distillation via indefinite causal order*, **Physical Review Research 7**, 043257 (2025). [DOI](https://doi.org/10.1103/mvrg-yj3l); [published full text](https://harvest.aps.org/v2/journals/articles/10.1103/mvrg-yj3l/fulltext); [arXiv:2501.13696v1](https://arxiv.org/abs/2501.13696v1).
+
+Section IV of the journal version, published 5 December 2025, gives the inherited four-call Pauli purification branch. Appendix A compares selected permutation constructions; it does not establish the arbitrary-controller fidelity frontier. Section VII's extension by twirling changes the supplied channel resource. The present comparison retains the raw slots, excludes per-slot wrappers, and allows only a final herald-dependent target unitary.
+
+The sister repository [Quantum Order Distillation](https://github.com/GoGoKo699/Quantum-Order-Distillation) owns the complete [controller reduction](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md), [orthogonal frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md), and [tilted readout proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md). Those conclusions optimize accepted corrected Bell fidelity on the specified physical eight-order architecture. Here the [separation theorem](../science/noisy_separation.md) uses one fixed real recovery branch and directly certifies the retained state; the optimum does not classify every possible retained output. Fidelity at or below one half is not used as a converse entanglement test for arbitrary complex-controller outputs.
+
+<a id="control-noise"></a>
+
+## Control noise and protected conditional outcomes
+
+**Otavio A. D. Molitor, André H. A. Malavazi, Roberto Dobal Baldijão, Alexandre C. Orthey Jr., Ismael L. Paiva and Pedro R. Dieguez**, *Quantum switch instabilities with an open control*, **Communications Physics 7**, 373 (2024). [DOI](https://doi.org/10.1038/s42005-024-01843-y); [published full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11576514/); [arXiv:2405.09631v1](https://arxiv.org/abs/2405.09631v1).
+
+The two-slot collisional model shows that the bath can affect conditional states and their probabilities differently. In the zero-temperature limit one selected state is shielded while its postselection becomes less likely. These results establish control-noise sensitivity without implying that every noisy controller destroys exact recovery.
+
+The present [local-noise theorem](../science/noisy_separation.md) instead fixes an unobserved phase-flip channel on each physical controller bit and its placement relative to routing. The retained experiment uses two bits and three calls; the accepted experiment uses three bits and four calls. Matching per-bit noise does not make these experiments an equal-resource comparison. The retained PPT bound applies to the occupied six-dimensional support, whose 3 × 2 structure permits the inherited PPT sufficiency theorem to be used.
+
+<a id="positive-components"></a>
+
+## Positive-component distillation obstructions
+
+**Bartosz Regula and Ryuji Takagi**, *Fundamental limitations on distillation of quantum channel resources*, **Nature Communications 12**, 4411 (2021). [DOI](https://doi.org/10.1038/s41467-021-24699-0); [published article](https://www.nature.com/articles/s41467-021-24699-0); [arXiv:2010.11942v3](https://arxiv.org/abs/2010.11942v3).
+
+The probabilistic result around main-text Eq. (34), with Supplementary Note 5, Theorem 21, makes an unwanted component's accepted weight decisive. Postselection can evade the obstruction when it removes that component. The sister project's [strict Schur-noise proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_recovery_obstruction.md) establishes an unavoidable diagonal accepted contribution for every nonzero feasible controller effect under its assumptions. This is a model-specific use of the inherited principle, rather than a claim that full Choi rank alone forbids heralded recovery.
+
+The supported addition in this repository is the stated retained-C:T/accepted-R:T protocol separation with exact certificates and an interval proof. The comparison identifies the inherited architecture, state criteria and obstruction principles; it does not infer priority from search silence.
 
 ## Educational anchor
 

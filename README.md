@@ -29,6 +29,19 @@ K_0=|+\rangle\langle0|,
 
 A uniform controller on chronological orders $`012,021,102`$ and target $`|0\rangle`$ gives an unconditional $`3\times2`$ state with an exact partial-transpose witness value $`-1/54`$. Any two order alternatives are universally nonentangling for identical channels, even when more than two slots are available. The [full example](science/qubit_example.md) proves the attained minima and gives the output matrix.
 
+## A robust connection to heralded recovery
+
+The [shared-noise theorem](science/noisy_separation.md#uniform-separation) compares two specified protocols on the same raw measure–prepare channel family with a 1% depolarizing admixture. Every physical control bit has an independent 10% phase-flip probability. Uniformly over axis tilts $|\delta|\le0.2$ radians:
+
+| Protocol | Certified output |
+|---|---|
+| Three chronological orders $012,021,102$, uniform controller, target $\lvert0\rangle$, any three occupied two-bit codewords | The unconditional retained $C:T$ state is separable for every assignment of the three orders to those codewords. |
+| Four raw calls, the specified eight orders and three-bit physical encoding, fixed P2 accepted branch, Bell input | The accepted $R:T$ state is NPT, with $0.035<p<0.095$ and Bell fidelity $F>101/190$. |
+
+The proof reconstructs 249 exact retained-state partial-transpose certificates and 83 exact recovery witnesses, then extends the strict margins to the whole interval. Its positive lower bound acts on the occupied $3\times2$ support. The [full statement and proof](science/noisy_separation.md) keep the bipartitions, conditioning and resources explicit: three versus four calls, two versus three controller bits, and unconditional versus accepted outputs. This establishes a simultaneous robust example for these protocols.
+
+The sister repository [Quantum Order Distillation](https://github.com/GoGoKo699/Quantum-Order-Distillation) owns the [common raw-slot model](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md), [controller characterization](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md), [full recovery frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md) and [tilted optimality proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md). Both tracks use the same Watrous educational anchor. Retained controller–target entanglement and recovered reference–target entanglement remain separate tasks.
+
 ## Read the science
 
 Start with the [scientific account](science/README.md), or use a direct route below.
@@ -40,6 +53,7 @@ Start with the [scientific account](science/README.md), or use a direct route be
 | Linear-dimension converse and separate complete-erasure construction | [Channel realizations](science/channel_realizations.md) |
 | Exact entanglement-breaking qubit construction and local projection | [Minimal example](science/qubit_example.md) |
 | Noise model, exact threshold and conservative perturbation bound | [Robustness](science/robustness.md) |
+| Retained entanglement and accepted recovery under physical controller noise | [Uniform separation theorem and proof](science/noisy_separation.md) |
 | Channel-specific obstructions and operational meaning | [Interpretation](science/interpretation.md) |
 | Inherited results and closest primary sources | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | Reproducible finite certificates | [Verification](verification/README.md) |
@@ -50,7 +64,7 @@ The conditional-unitary commutation criterion is inherited from Roszak, and the 
 
 The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](learning/WATROUS_BRIDGE.md) identifies focused readings, translates the source's notation, and develops the connections to coherent order control. The [30-milestone map](learning/MILESTONES.md) organizes the project's understanding targets and their dependencies.
 
-Begin with the bridge's physical question, then use the map alongside the linked scientific pages. Its background phase assembles states, channels, entanglement and permutation representations into the precise model. Its narrative phase connects the universal obstruction, the channel constructions, the qubit example and the limitations into the complete result. The map is shared by all readers; it is defined by the science rather than by an assumed level of prior knowledge.
+Begin with the bridge's physical question, then use the map alongside the linked scientific pages. Its background phase assembles states, channels, entanglement and permutation representations into the precise model. Its narrative phase connects the order-support theorem and minimal example to noisy retained states, accepted recovery witnesses, continuity and charged success costs. The map is shared by all readers; it is defined by the science rather than by an assumed level of prior knowledge.
 
 | Reading purpose | Route |
 |---|---|
@@ -72,13 +86,16 @@ Optional numerical checks of the marker construction use the pinned NumPy depend
 ```bash
 python3 -m pip install -r verification/requirements.txt
 python3 verification/verify_marker.py
+python3 verification/audit_verify.py --root verification/certificates --rebuild
 ```
 
-The exact program reconstructs the qubit output from its Kraus definition, verifies the full channel-square identity and NPT certificates, and checks the noise-threshold algebra. The marker program checks finite instances at three and four calls. Neither replaces the analytical proof for arbitrary order supports and channel dimensions.
+The original exact program reconstructs the qubit output from its Kraus definition, verifies the full channel-square identity and NPT certificates, and checks the noise-threshold algebra. The shared verifier additionally reconstructs all 249 noisy retained-state and 83 recovery certificates, along with the sister recovery-frontier identities. The marker program checks finite instances at three and four calls. Neither replaces the analytical proof for arbitrary order supports and channel dimensions.
 
 ## Scope
 
-Ideal coherent order control is supplied, with independent channel instances, inaccessible environments and no intermediate target operations or target-carrying bypass. The converse is existential over channels; a nonabelian support does not entangle every noise model. The universal constructions are not entanglement breaking, while the minimal qubit example is. The full-dephasing threshold is specific to its stated one-parameter noise family.
+The order-support theorem supplies ideal coherent order control; the shared-noise theorem instead fixes its explicit unobserved physical phase noise. Both use independent channel instances, inaccessible environments and no intermediate target operations or target-carrying bypass.
+
+The converse is existential over channels; a nonabelian support does not entangle every noise model. The universal constructions are not entanglement breaking, while the minimal qubit example is. The full-dephasing threshold is specific to its stated one-parameter noise family.
 
 The retained controller–target entanglement task is distinct from heralded message recovery, communication capacity and device-independent causal certification. General mixed-controller necessity and an EB-only classification are outside the theorem.
 

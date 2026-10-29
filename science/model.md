@@ -113,3 +113,9 @@ Ideal coherent order control is supplied. Every branch traverses every channel s
 The main output is unconditional: neither a control measurement nor a successful herald is part of the entanglement-generation claim. A final local filter may demonstrate entanglement already present. Its probability is stated separately.
 
 This task differs from preserving an unknown target's entanglement with a remote reference or recovering an identity channel after measuring the controller. Entanglement across $`C:T`$ alone also does not certify indefinite causal order against unrestricted implementations. The [interpretation](interpretation.md) explains these distinctions and the channel families that remain nonentangling even with noncommuting order supports.
+
+## 5. Specified physical-noise comparison
+
+The [shared-noise account](noisy_separation.md) introduces a tilted measure–prepare channel with a positive depolarizing admixture and unobserved independent phase flips on each physical controller bit. It retains independent raw slots and the exclusions above. Its retained experiment fixes the three chronological orders, uniform controller and target input; its separate recovery experiment uses an untouched Bell reference, four raw calls, an explicit eight-word physical codebook and a fixed accepted controller outcome. No noisy version of the universal order-support iff theorem is inferred from this example.
+
+The distinction between chronological order here and rightmost-first matrix words in Quantum Order Distillation is made explicit in the [two protocols](noisy_separation.md#specified-protocols). Local phase noise depends on the actual physical codewords, including the assignment of orders to them.

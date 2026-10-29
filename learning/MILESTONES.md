@@ -1,27 +1,27 @@
-# Project understanding map: 30 milestones
+# Thirty milestones for quantum order entanglement
 
-This map organizes quantum order entanglement into exactly **30 milestones**, M01 through M30. Its targets, dependencies and order follow the scientific project and are common to every reader. The final milestones join the local ingredients into the complete contribution and its operational limits.
+This map organizes the project into exactly **30 milestones**, M01–M30, common to every reader. The story moves from the structure of coherent order supports to actual identical-channel realizations, then to a robust comparison between retained controller–target entanglement and heralded reference–target recovery.
 
-The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](WATROUS_BRIDGE.md) owns the source version, focused section pointers, notation translations and locally supplied explanations. Use it alongside this map and the canonical scientific pages linked below.
+The sole educational anchor, shared with the sister project, is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](WATROUS_BRIDGE.md) supplies the source version, focused section pointers, notation translations and project-specific missing steps. Primary research sources provide attribution and proof dependencies rather than additional educational anchors.
 
 ## Allocation and route
 
-The allocation is **10 background/preliminaries milestones, followed by 20 narrative/innovation milestones**. The background moves from states and channels through separability and permutation operators to the complete supplied model. The narrative moves from the relative-order obstruction through a physically realizable converse and the minimal example to the whole contribution and its limits. Each phase ends in synthesis. The map identifies understanding targets; it does not replace the complete proofs or claim to cover every calculation.
-
-The focused Watrous readings cover states and composite systems (§§2.1.2–2.1.3), channel representations (§2.2.2), separable states and maps (§§6.1.1–6.1.2), PPT (§6.2.3), and permutation operators (§7.1.1). The bridge identifies additional linear-algebra and norm facts where they are used, translates notation, and supplies the project-specific steps. Primary research papers provide attribution and proof dependencies, not additional educational anchors.
+The **10 + 20 allocation** follows the project’s scientific structure. The background joins local states, channels, separability and permutation representations into the supplied-process question. The narrative combines the obstruction and converse, their explicit realizations, and the controller-noise connection into the whole contribution. Each phase ends in synthesis. Specialist calculations remain in the canonical science pages.
 
 | Phase | Milestones | Connection established |
 |---|---|---|
-| Background/preliminaries | M01–M04 | States, channels, inaccessible environments and independent composition |
-| Background/preliminaries | M05–M09 | Order coherence, separability, partial transpose and permutation representations |
-| Background/preliminaries | M10 | The complete supplied process and entanglement task |
-| Narrative/innovation | M11–M14 | Relative orders give the universal abelian obstruction and necessary minima |
-| Narrative/innovation | M15–M20 | An inherited state criterion and the marker construction complete the converse |
-| Narrative/innovation | M21–M24 | Complete-erasure and minimal qubit realizations expose distinct physical consequences |
-| Narrative/innovation | M25–M28 | Noise tolerance, channel-specific restrictions and resource accounting |
-| Narrative/innovation | M29–M30 | Attribution, evidence and the full scientific conclusion |
+| Background/preliminaries | [M01](#m01)–[M04](#m04) | States, channels, inaccessible environments and independent slots |
+| Background/preliminaries | [M05](#m05)–[M10](#m10) | Coherence, separability, permutations and the complete task |
+| Narrative/innovation | [M11](#m11)–[M16](#m16) | Universal obstruction, inherited state criterion and constrained converse |
+| Narrative/innovation | [M17](#m17)–[M20](#m20) | Minimal qubit realization, witnesses, robustness and channel-specific limits |
+| Narrative/innovation | [M21](#m21)–[M26](#m26) | Physical noise, shared tilted family, exact certificates and uniform comparison |
+| Narrative/innovation | [M27](#m27)–[M30](#m30) | Sister optimization, normalization, evidence and whole-project synthesis |
+
+Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1–6.1.2, §6.2.3 and §7.1.1. The noisy comparison also uses measurement, norm and Schur-map tools in §§2.3, 3.3 and 4.1.3. The [bridge](WATROUS_BRIDGE.md) explains their roles; it is a focused route, not an assignment to read the whole book.
 
 ## Background/preliminaries: local objects to the complete model
+
+<a id="m01"></a>
 
 ### M01. States and the chosen bipartition
 
@@ -32,6 +32,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Conceptual connection:** The same physical systems can support different questions depending on which systems are retained and compared.
 - **Source pointers:** Watrous §§2.1.2–2.1.3 for states and composite systems, with the local state primer in the [bridge](./WATROUS_BRIDGE.md); [model inputs and bipartition](../science/model.md#3-inputs-and-the-entanglement-task).
 
+<a id="m02"></a>
+
 ### M02. What makes a map a quantum channel?
 
 - **Phase:** Background/preliminaries.
@@ -40,6 +42,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Dependencies and story role:** M01. Introduces the local physical transformations before considering their arrangement or coherent control.
 - **Conceptual connection:** Complete positivity protects compatibility with untouched systems; trace preservation accounts for all outcomes of an unconditional process.
 - **Source pointers:** Watrous §2.2.2 through the [bridge](./WATROUS_BRIDGE.md); [channel definition](../science/model.md#1-independent-slots-and-chronological-order) and [switch normalization](../science/model.md#2-normalization-and-kraus-independence).
+
+<a id="m03"></a>
 
 ### M03. Kraus operators and inaccessible environments
 
@@ -50,6 +54,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Conceptual connection:** Environmental information can be useful if accessible, but its appearance in an equation does not make it operationally available.
 - **Source pointers:** Watrous §2.2.2, Corollary 2.23 and Eqs. (2.99)-(2.100), via the [bridge](./WATROUS_BRIDGE.md); [Kraus independence](../science/model.md#2-normalization-and-kraus-independence).
 
+<a id="m04"></a>
+
 ### M04. Sequential composition and independent slots
 
 - **Phase:** Background/preliminaries.
@@ -58,6 +64,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Dependencies and story role:** M02-M03. Builds the ordinary sequential process that every coherent order branch must reproduce.
 - **Conceptual connection:** Identical slot maps give the same definite-order channel, while independence determines which environmental tuples are summed.
 - **Source pointers:** Watrous §2.2.2 for channel representation language, with the chronological derivation in the [bridge](./WATROUS_BRIDGE.md); [independent slots and Eq. (1)](../science/model.md#1-independent-slots-and-chronological-order).
+
+<a id="m05"></a>
 
 ### M05. Coherence over order labels
 
@@ -68,6 +76,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Conceptual connection:** Discarding the controller removes the off-diagonal blocks that distinguish coherent routing from an ordinary mixture.
 - **Source pointers:** The local order-control discussion in the [bridge](./WATROUS_BRIDGE.md), using Watrous §6.1.1 state language; [controller input and output blocks](../science/model.md#3-inputs-and-the-entanglement-task).
 
+<a id="m06"></a>
+
 ### M06. Separable states and product Kraus maps
 
 - **Phase:** Background/preliminaries.
@@ -76,6 +86,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Dependencies and story role:** M01-M03. Provides the form of impossibility certificate that the main proof will construct.
 - **Conceptual connection:** A structural property of a channel can settle an entanglement question for all separable inputs at once.
 - **Source pointers:** Watrous §§6.1.1-6.1.2 through the [bridge](./WATROUS_BRIDGE.md); [product Kraus operators](../science/order_criterion.md#product-kraus-operators).
+
+<a id="m07"></a>
 
 ### M07. What partial transposition can certify
 
@@ -86,6 +98,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Conceptual connection:** The dimension of the bipartition changes what a positivity test can conclude.
 - **Source pointers:** Watrous §6.2.3, Definition 6.39, via the [bridge](./WATROUS_BRIDGE.md); [model's PPT scope](../science/model.md#3-inputs-and-the-entanglement-task) and [primary criteria](../references/RELATED_WORK.md#partial-transpose).
 
+<a id="m08"></a>
+
 ### M08. Permutations, groups and cosets
 
 - **Phase:** Background/preliminaries.
@@ -95,6 +109,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Conceptual connection:** Group structure organizes relations among routes even when the ordinary channel action is identical on every route.
 - **Source pointers:** Watrous §7.1.1, Eqs. (7.3)-(7.5), for permutation operators; the [bridge](./WATROUS_BRIDGE.md) supplies group and coset preparation; [relative permutations](../science/order_criterion.md#relative-permutations).
 
+<a id="m09"></a>
+
 ### M09. Commuting representations and a common basis
 
 - **Phase:** Background/preliminaries.
@@ -103,6 +119,8 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 - **Dependencies and story role:** M03 and M08. Connects the operator and group viewpoints that meet in the no-go proof.
 - **Conceptual connection:** A common basis can turn a family of coupled descriptions into aligned scalar phases.
 - **Source pointers:** Watrous Theorem 1.5 and §7.1.1 through the [bridge](./WATROUS_BRIDGE.md), which extends the two-operator diagonalization statement to a finite commuting family; [common Kraus-index space](../science/order_criterion.md#a-common-kraus-index-space).
+
+<a id="m10"></a>
 
 ### M10. Assemble the supplied process and question
 
@@ -115,182 +133,322 @@ The focused Watrous readings cover states and composite systems (§§2.1.2–2.1
 
 ## Narrative/innovation: local mechanism to the complete contribution
 
-### M11. Relative orders and reference independence
+<a id="m11"></a>
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Which comparison between selected orders matters, and why does choosing a different reference leave the answer unchanged?
-- **Understanding target:** Form $`G_\Pi=\langle\pi_0^{-1}\pi\rangle`$, explain reference independence of the generated group, and relate left-relative to right-relative permutations by common conjugation. Understand why individual orders need not commute for their relative family to do so.
-- **Dependencies and story role:** M08-M10. Identifies the precise structural object on which the contribution depends.
-- **Conceptual connection:** The geometry of differences between routes is more informative than the names assigned to the routes.
-- **Source pointers:** Watrous §7.1.1 through the [bridge](./WATROUS_BRIDGE.md); [relative group and reference proof](../science/order_criterion.md#relative-permutations).
+### M11. Relative orders and formal histories
 
-### M12. Orders act on formal Kraus histories
+**Phase:** Narrative/innovation.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Where does a permutation act in the proof if no target permutation gate is available?
-- **Understanding target:** Trace the passage from a chronological slot order to a permutation of the common operator-valued Kraus vector. Keep the formal index space distinct from both the physical target and an accessible environment, and follow the representation's composition convention.
-- **Dependencies and story role:** M03-M04, M09 and M11. Supplies the mathematical mechanism connecting order structure to a channel statement.
-- **Conceptual connection:** Reindexing the same independent noise tuples exposes a symmetry without adding a physical operation.
-- **Source pointers:** Watrous §2.2.2 and §7.1.1 through the [bridge](./WATROUS_BRIDGE.md); [common Kraus-index representation](../science/order_criterion.md#a-common-kraus-index-space).
+**Central question:** How do relative permutations act on the same independent noise histories?
 
-### M13. The abelian product-Kraus obstruction
+**Understanding target:** Choose a reference order, form the generated relative group and explain reference independence. Represent each route by a permutation of the formal Kraus-index tuple, keeping that mathematical space distinct from accessible target memory.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** How does commutation of relative orders force every identical channel to preserve separability?
-- **Understanding target:** Explain the chain from commuting index unitaries to one common diagonalizing basis, then to $`D_\ell\otimes L_\ell`$ Kraus factors. Identify why the same basis change must be applied to the entire joint Kraus family.
-- **Dependencies and story role:** M06, M09 and M12. Completes the universal impossibility half, moving from a local index-space relation to all separable inputs.
-- **Conceptual connection:** Mathematical Kraus freedom becomes a physical no-entanglement certificate through product structure.
-- **Source pointers:** Watrous Corollary 2.23 and §§6.1.1-6.1.2 via the [bridge](./WATROUS_BRIDGE.md); [product-Kraus proof](../science/order_criterion.md#product-kraus-operators) and [inherited two-history mechanism](../references/RELATED_WORK.md#two-history-obstructions).
+**Dependencies and story role:** M03–M05 and M08–M10. Connects the supplied routing process to the representation used in the proof.
 
-### M14. Quantifiers and necessary minima
+**Conceptual connection:** Ordinary equality of channel compositions leaves a nontrivial relationship among off-diagonal history amplitudes.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** What does the no-go establish for every channel, and what still requires an existence construction?
-- **Understanding target:** Distinguish universal impossibility from failure of one selected noise model. Derive the obstruction for any two alternatives and all cyclic supports, and separate the number of calls from the number of occupied control labels. Recognize that necessary minima do not yet prove attainability.
-- **Dependencies and story role:** M11-M13. Synthesizes the no-go and defines the missing converse before introducing it.
-- **Conceptual connection:** The meaning of “for every channel” determines which architectural conclusion a proof supports.
-- **Source pointers:** The [bridge](./WATROUS_BRIDGE.md), using Watrous §§6.1.1-6.1.2; [Theorem 1](../science/order_criterion.md#theorem-1-the-order-support-criterion) and [two-alternative consequence](../science/order_criterion.md#any-two-alternatives-are-nonentangling).
+**Source pointers:** Watrous §7.1.1 and §2.2.2 through the [bridge](WATROUS_BRIDGE.md); [relative permutations](../science/order_criterion.md#relative-permutations); [common Kraus-index space](../science/order_criterion.md#a-common-kraus-index-space).
 
-### M15. The inherited conditional-unitary state
+<a id="m12"></a>
 
-- **Phase:** Narrative/innovation.
-- **Central question:** What established state family can convert noncommuting relative unitaries into an entanglement statement?
-- **Understanding target:** Interpret the block state with entries $`\alpha_i\overline{\alpha_j}U_iU_j^\dagger/D`$ as controlled unitaries acting on a maximally mixed target. Explain the harmless reference-unitary choice and the requirement that occupied control amplitudes be nonzero.
-- **Dependencies and story role:** M05-M07 and M14. Introduces the inherited mathematical ingredient needed by the converse without assuming it is physically realizable by identical slots.
-- **Conceptual connection:** A known state criterion can guide a construction while leaving its constrained physical realization unresolved.
-- **Source pointers:** Watrous §6.1.1 via the [bridge](./WATROUS_BRIDGE.md); [Lemma 2](../science/channel_realizations.md#the-inherited-conditional-unitary-criterion) and [Roszak attribution](../references/RELATED_WORK.md#roszak2018).
+### M12. A common basis yields a product-Kraus obstruction
 
-### M16. Why commutation is the exact state criterion
+**Phase:** Narrative/innovation.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Why do the conditional-unitary states become NPT precisely when the relative unitaries fail to commute?
-- **Understanding target:** Follow the conceptual roles of invertible local filtering, the reference identity block and its Schur complement. Explain why positive blocks with zero diagonal force vanishing off-diagonal blocks, and why common eigenvectors give a separable decomposition in the commuting case.
-- **Dependencies and story role:** M07, M09 and M15. Completes the inherited lemma and identifies exactly what a channel realization must reproduce.
-- **Conceptual connection:** Positivity converts a matrix commutator into a sharp entanglement boundary.
-- **Source pointers:** Watrous Definition 6.39 through the [bridge](./WATROUS_BRIDGE.md); [local Schur-complement proof](../science/channel_realizations.md#proof) and [inherited result](../references/RELATED_WORK.md#roszak2018).
+**Central question:** Why does an abelian relative group forbid retained entanglement for every identical channel?
 
-### M17. Build one legitimate marker channel
+**Understanding target:** Use simultaneous diagonalization of the relative history permutations to obtain one common target Kraus operator per transformed index and diagonal controller phase factors. Explain why this product-Kraus form preserves every separable input without requiring a faithful representation.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** How can a single channel store the time of a noise event inside the counted target system?
-- **Understanding target:** Identify the empty, marker and failure sectors, the roles of $`K_0`$, $`K_1`$ and $`F_j`$, and the reason their completeness relation defines a CPTP map. Keep the internal marker states distinct from an external protected memory.
-- **Dependencies and story role:** M02-M04, M10 and M16. Begins the constructive converse with a locally specified physical channel rather than arbitrary controlled unitaries.
-- **Conceptual connection:** A coherent marker inside the target converts chronology into a readable representation while respecting the supplied resources.
-- **Source pointers:** Watrous §2.2.2 through the [bridge](./WATROUS_BRIDGE.md); [marker channel](../science/channel_realizations.md#the-linear-dimension-channel) and [CPTP check](../science/channel_realizations.md#complete-positivity-and-trace-preservation).
+**Dependencies and story role:** M06, M09 and M11. Produces the universal impossibility direction from the local commutation condition.
 
-### M18. Count the histories that reach the marker
+**Conceptual connection:** A common environmental coordinate change proves a physical channel property without granting access to that environment.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Why do exactly-one-insertion environmental tuples produce the useful marker block?
-- **Understanding target:** Explain which trajectories remain empty, which vanish, and which enter the absorbing failure sector. Relate the slot carrying the unique $`K_1`$ to its chronological position and the number of later shifts, including the inverse-permutation convention.
-- **Dependencies and story role:** M04, M12 and M17. Turns the channel's local transition rules into an exact expression for its order-dependent output.
-- **Conceptual connection:** Independent inaccessible outcomes are summed, but their different chronological positions can still shape coherent cross-order blocks.
-- **Source pointers:** Watrous §2.2.2 and §7.1.1 via the [bridge](./WATROUS_BRIDGE.md); [surviving tuples and marker formula](../science/channel_realizations.md#which-environmental-tuples-reach-the-marker-space).
+**Source pointers:** Watrous Theorem 1.5, Corollary 2.23 and §§6.1.1–6.1.2; [abelian sufficiency proof](../science/order_criterion.md#proof-of-abelian-sufficiency).
 
-### M19. Faithfulness connects the marker to the group
+<a id="m13"></a>
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Why can the marker output detect the actual commutation relations of the selected relative permutations?
-- **Understanding target:** Recognize the normalized marker block as the state from M15. Explain how its relative unitaries are conjugated natural permutation matrices and why faithfulness prevents a nontrivial group commutator from disappearing in this representation.
-- **Dependencies and story role:** M09, M11, M15-M16 and M18. Joins the inherited state criterion to the new constrained channel construction.
-- **Conceptual connection:** A representation must preserve the relevant distinction, not merely assign matrices to order labels.
-- **Source pointers:** Watrous §7.1.1 through the [bridge](./WATROUS_BRIDGE.md); [faithful marker representation](../science/channel_realizations.md#faithfulness-supplies-the-converse) and [Lemma 2](../science/channel_realizations.md#the-inherited-conditional-unitary-criterion).
+### M13. Quantifiers, two alternatives and cyclic families
 
-### M20. Complete the unconditional converse
+**Phase:** Narrative/innovation.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Why does an entangled marker sector prove unconditional entanglement, and what does its nonvanishing probability mean?
-- **Understanding target:** Explain why local filtering cannot turn PPT into NPT and why the empty, marker and failure sectors do not cancel the negative block. State the $`n+2`$ target dimension, support-independent channel and filter probability, without converting that probability into a uniform entanglement amount.
-- **Dependencies and story role:** M07, M14 and M17-M19. Completes the iff theorem and its physical realization.
-- **Conceptual connection:** A local diagnostic can reveal an unconditional resource while its success probability remains a separate quantity.
-- **Source pointers:** Watrous Definition 6.39 and §6.1.2 via the [bridge](./WATROUS_BRIDGE.md); [unconditional converse](../science/channel_realizations.md#faithfulness-supplies-the-converse) and [resource statement](../science/channel_realizations.md#resources-and-the-role-of-filtering).
+**Central question:** Which order families are ruled out, and what does failure of that obstruction promise?
 
-### M21. Erase every definite-order input
+**Understanding target:** Explain why every two-alternative support is cyclic and nonentangling, why arbitrarily many cyclic alternatives still fail, and why nonabelian support means some channel can work rather than every channel. Distinguish the pure-support theorem from the stated sufficient condition for mixed controllers.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Can the same order criterion be realized when the full definite-order channel destroys all target information?
-- **Understanding target:** Explain the shift/reset channel on $`n`$ registers, why its $`n`$-fold composition is completely depolarizing, and how the fresh appended symbols realize a faithful word permutation. Keep this exponential-dimension construction separate from the linear-dimension marker channel.
-- **Dependencies and story role:** M04, M16 and M19-M20. Adds a complementary physical consequence of the theorem without changing its quantifiers.
-- **Conceptual connection:** Erasure by the composed target channel does not determine the entanglement of the retained coherent-order output.
-- **Source pointers:** Watrous §2.2.2 and §7.1.1 via the [bridge](./WATROUS_BRIDGE.md); [complete-erasure construction](../science/channel_realizations.md#complete-erasure-in-every-definite-order).
+**Dependencies and story role:** M08, M11 and M12. Turns the obstruction into necessary minima while fixing the quantifiers of the converse.
 
-### M22. The minimal entanglement-breaking channel
+**Conceptual connection:** Counting alternatives alone misses their relative algebra; a mixed controller is not classified only by its nonzero matrix pattern.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** How can slots that individually break entanglement still attain the smallest entangling order architecture?
-- **Understanding target:** Interpret measure-$`Z`$/prepare-$`X`$ as an entanglement-breaking channel, establish the meaning of $`\mathcal N^2=\Delta`$, and identify the three selected orders and their two noncommuting relative transpositions. Distinguish an EB channel's action on one target from the supplied joint coherent-order process.
-- **Dependencies and story role:** M02, M06, M14 and M20. Moves from general existence to a two-level target that can attain the necessary minima.
-- **Conceptual connection:** A restriction on each channel instance need not survive the addition of coherent order as a higher-order resource.
-- **Source pointers:** Watrous §2.2.2 and Exercise 6.1 on measure-and-prepare channels through the [bridge](./WATROUS_BRIDGE.md); [qubit channel](../science/qubit_example.md#1-the-channel) and [input orders](../science/qubit_example.md#2-input-and-coherent-orders).
+**Source pointers:** Watrous permutation and convexity foundations via the [bridge](WATROUS_BRIDGE.md); [theorem and consequences](../science/order_criterion.md#theorem-1-the-order-support-criterion); [mixed-controller condition](../science/order_criterion.md#mixed-controllers-a-sufficient-condition).
 
-### M23. An exact joint-state witness
+<a id="m14"></a>
 
-- **Phase:** Narrative/innovation.
-- **Central question:** What certifies that the minimal example produces entanglement rather than merely nonclassical-looking correlations?
-- **Understanding target:** Connect the sum over eight independent Kraus tuples to the explicit $`3\times2`$ output. Explain the significance of its negative partial-transpose quadratic form, distinguish that certificate from reduced-controller decoherence, and combine it with the no-go to justify the attained minima.
-- **Dependencies and story role:** M04, M07, M14 and M22. Closes the minimal example with a finite exact certificate rather than an inference from the architecture alone.
-- **Conceptual connection:** A channel-independent permission theorem and a channel-specific witness answer different parts of the existence question.
-- **Source pointers:** Watrous Definition 6.39 via the [bridge](./WATROUS_BRIDGE.md); [exact output](../science/qubit_example.md#3-exact-output-from-the-kraus-sum), [witness](../science/qubit_example.md#4-an-exact-entanglement-certificate) and [minimality](../science/qubit_example.md#6-what-is-minimal).
+### M14. The inherited conditional-unitary state criterion
 
-### M24. Reveal a two-qubit entangled subspace
+**Phase:** Narrative/innovation.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** What does the local controller projection reveal, and what does its success not establish?
-- **Understanding target:** Identify the two-dimensional controller subspace, the success probability $`1/2`$, and the negative principal minor of the normalized projected state. Explain why the filter reveals existing entanglement and why the resulting mixed two-qubit state is not a pure Bell pair after one copy.
-- **Dependencies and story role:** M06-M07, M20 and M23. Connects the unconditional certificate to a simpler accessible bipartition while preserving the operational limits.
-- **Conceptual connection:** Local postselection changes the state and its normalization, but cannot create entanglement from a separable input.
-- **Source pointers:** Watrous §§6.1.1-6.1.2 and Definition 6.39 through the [bridge](./WATROUS_BRIDGE.md); [local projection](../science/qubit_example.md#5-a-local-projection-exposes-two-qubit-entanglement).
+**Central question:** When does a coherent family of unitaries on a maximally mixed target create NPT?
 
-### M25. Specify the noise before its tolerance
+**Understanding target:** Explain the state built from blocks U_i U_j-adjoint and why its separability is equivalent to commutation of the relative unitaries. Trace the Schur-complement argument and the commuting product-state decomposition. Identify this criterion as inherited from Roszak rather than the project’s channel realization.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Why does full controller dephasing become output white noise for this particular example?
-- **Understanding target:** Relate the retained-coherence parameter to the initial controller mixture and the identical diagonal target blocks. Explain the exact family $`\rho_\eta=\eta\rho+(1-\eta)I_6/6`$ and distinguish a fixed-witness sufficient threshold from the state's actual separability transition.
-- **Dependencies and story role:** M05, M07 and M23. Introduces robustness through a specified physical noise model rather than an unspecified error percentage.
-- **Conceptual connection:** The same numerical noise parameter can have different meanings unless the map and affected subsystem are fixed.
-- **Source pointers:** The [bridge](./WATROUS_BRIDGE.md), using Watrous Definition 6.39; [dephasing family](../science/robustness.md#controller-dephasing-and-output-white-noise) and [fixed witness](../science/robustness.md#a-simple-fixed-witness).
+**Dependencies and story role:** M06–M09 and M13. Supplies the entanglement criterion that a legitimate repeated channel must physically realize.
 
-### M26. Exact threshold and conservative perturbation bounds
+**Conceptual connection:** An abstract controlled-unitary state is a useful proof target; inserting arbitrary controlled gates would leave the supplied-slot model.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Which parts of the robustness result are exact, and which are sufficient bounds for a broader perturbation class?
-- **Understanding target:** Explain how the lowest partial-transpose eigenvalue determines the dephasing transition and why $`3\times2`$ PPT sufficiency makes it an exact separability boundary. Distinguish that threshold from the conservative output trace-norm ball and from unproved tolerances on individual gates or slots.
-- **Dependencies and story role:** M07 and M25. Integrates spectrum, dimensional scope and error model into one appropriately qualified robustness statement.
-- **Conceptual connection:** Exactness is always relative to a specified state family and criterion.
-- **Source pointers:** Watrous Definition 6.39 and §1.1.3 on norms through the [bridge](./WATROUS_BRIDGE.md); [exact transition](../science/robustness.md#exact-separability-transition), [perturbation bound](../science/robustness.md#a-bound-for-arbitrary-output-perturbations) and [PPT research sources](../references/RELATED_WORK.md#partial-transpose).
+**Source pointers:** Watrous §§1.1.3, 6.1.1 and 6.2.3; [conditional-unitary criterion and proof](../science/channel_realizations.md#the-inherited-conditional-unitary-criterion); [source attribution](../references/RELATED_WORK.md#roszak2018).
 
-### M27. Channels that still cannot entangle
+<a id="m15"></a>
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Why can a nonabelian support fail for a particular channel, or for a restricted class of channels?
-- **Understanding target:** Explain the shared-eigenbasis obstruction for depolarizers, the phase-only reordering of Pauli products, and the effect of a common final EB slot. Use these examples to reject a universal EB-only converse and the assertion that every channel works on every nonabelian support.
-- **Dependencies and story role:** M06, M14, M20 and M22. Tests the theorem's quantifiers against physically different obstructions.
-- **Conceptual connection:** Architecture supplies a possibility boundary; channel structure can impose further restrictions within it.
-- **Source pointers:** Watrous §§6.1.1-6.1.2 through the [bridge](./WATROUS_BRIDGE.md); [channel-specific boundaries](../science/interpretation.md#channel-families-that-remain-nonentangling).
+### M15. One marker channel realizes every nonabelian support
 
-### M28. Separate tasks and count resources
+**Phase:** Narrative/innovation.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Which operational conclusions follow from retained controller-target entanglement, and which require a different task definition?
-- **Understanding target:** Separate $`C:T`$ entanglement creation from target-reference recovery, asymptotic communication capacity and causal certification. Count calls, occupied order labels and full target dimension separately, and recognize ideal coherent order as a supplied resource rather than a free implementation.
-- **Dependencies and story role:** M10, M20-M21 and M23-M27. Integrates the constructions into a common operational comparison without transferring advantages between different endpoints.
-- **Conceptual connection:** The chosen bipartition and allowed operations determine what a physical result means.
-- **Source pointers:** The [bridge](./WATROUS_BRIDGE.md), using Watrous channel and separable-map language; [task distinctions](../science/interpretation.md#communication-and-entanglement-are-different-tasks) and [resource comparison](../science/interpretation.md#resources-of-the-constructions).
+**Central question:** How can a single ordinary channel turn time position into the needed target permutation?
 
-### M29. Connect claims to proofs and antecedents
+**Understanding target:** Build the empty, marker and absorbing-failure sectors, check Kraus completeness, and isolate histories with one insertion. Relate the insertion’s physical slot to its final marker, use the faithful natural representation, and explain why a local NPT marker filter proves the unconditional output was already NPT.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** Which evidence supports each central claim, and which parts of the argument come from earlier work?
-- **Understanding target:** Map the general iff to analytical proofs, the finite qubit and threshold values to exact certificates, and the marker examples to numerical consistency checks. Attribute the conditional-unitary lemma, two-history obstruction and earlier switch settings without treating those antecedents as the full constrained realization theorem.
-- **Dependencies and story role:** M13-M28. Integrates the logical and bibliographic support before the final scientific synthesis.
-- **Conceptual connection:** Reproducibility, proof, attribution and novelty each answer a distinct question about a research result.
-- **Source pointers:** The [Watrous bridge](./WATROUS_BRIDGE.md) separates anchor foundations from research dependencies; [claim map](../science/README.md#claim-and-proof-map), [related work](../references/RELATED_WORK.md) and [verification scope](../verification/README.md#what-these-checks-establish).
+**Dependencies and story role:** M03–M04 and M11–M14. Completes the physically constrained converse with target dimension n+2.
 
-### M30. Synthesize the full order-entanglement result
+**Conceptual connection:** The channel encodes the order relation through its own dynamics; it supplies no extra intermediate controlled target operation.
 
-- **Phase:** Narrative/innovation.
-- **Central question:** What does the completed project establish about identical noise, coherent order and entanglement?
-- **Understanding target:** Explain the complete chain: commuting relative orders force a product-Kraus obstruction; noncommuting relatives admit an explicit physical converse; a minimal EB-qubit example attains the capability even with erased definite-order output. State the pure-support quantifier, resource costs, robustness scope and remaining boundaries together.
-- **Dependencies and story role:** M11-M29. Concludes the narrative by joining mechanism, theorem, realization, evidence and physical interpretation into one account.
-- **Conceptual connection:** Equality of ordinary target channels leaves room for distinct coherent-order capabilities, governed here by relative permutation structure.
-- **Source pointers:** The [single-anchor bridge](./WATROUS_BRIDGE.md), [scientific entrypoint](../science/README.md), [Theorem 1](../science/order_criterion.md#theorem-1-the-order-support-criterion) and [scientific conclusion](../science/interpretation.md#scientific-conclusion).
+**Source pointers:** Watrous §2.2.2 and §6.2.3; [linear-dimension channel and full converse](../science/channel_realizations.md#the-linear-dimension-channel).
+
+<a id="m16"></a>
+
+### M16. Filter probability and complete-erasure realization
+
+**Phase:** Narrative/innovation.
+
+**Central question:** Which resource statements belong to the marker construction, and which require a different channel?
+
+**Understanding target:** Explain the marker filter probability n p (1-p)^(n-1), its constant lower bound at p=1/n, and why this does not bound entanglement uniformly over tiny supported amplitudes. Separately explain the shift/reset realization with dimension s^n and complete definite-order erasure on every input.
+
+**Dependencies and story role:** M14–M15. Integrates the converse’s costs and distinguishes two constructions with different physical strengths.
+
+**Conceptual connection:** The linear target dimension, filter probability, complete erasure and entanglement-breaking property must not be combined into an unsupported single construction.
+
+**Source pointers:** Watrous §1.2.2, §2.2.2 and §7.1.1; [marker resources](../science/channel_realizations.md#resources-and-the-role-of-filtering); [complete-erasure realization](../science/channel_realizations.md#complete-erasure-in-every-definite-order).
+
+<a id="m17"></a>
+
+### M17. The minimal three-call entanglement-breaking example
+
+**Phase:** Narrative/innovation.
+
+**Central question:** How can entanglement-breaking slots attain the smallest entangling architecture?
+
+**Understanding target:** Specify the measure-Z/prepare-X qubit channel, show that two ordinary uses depolarize, and choose chronological orders 012, 021 and 102 with a uniform pure controller. Combine the two-alternative obstruction with the explicit example to justify three calls and three alternatives as separate minima.
+
+**Dependencies and story role:** M10, M13 and M15. Makes the general boundary concrete with the smallest nontrivial target.
+
+**Conceptual connection:** An entanglement-breaking slot need not factor as a final local entanglement-breaking operation in a coherent superposition of different complete orders.
+
+**Source pointers:** Watrous §2.2.2 and Chapter 6’s measure-and-prepare foundations; [minimal qubit channel](../science/qubit_example.md#1-the-channel); [minimality](../science/qubit_example.md#6-what-is-minimal).
+
+<a id="m18"></a>
+
+### M18. An exact retained-state entanglement witness
+
+**Phase:** Narrative/innovation.
+
+**Central question:** What proves that the minimal example’s unconditional joint state is entangled?
+
+**Understanding target:** Follow the finite Kraus contraction to the exact 6-by-6 output and evaluate its rational negative-partial-transpose witness. Explain the optional local projection exposing a two-qubit entangled subspace without confusing the filtered diagnostic with the unconditional task.
+
+**Dependencies and story role:** M07 and M17. Joins the construction to an inspectable exact entanglement certificate.
+
+**Conceptual connection:** A local filter reveals existing entanglement; it does not supply the entanglement claimed for the unconditional state.
+
+**Source pointers:** Watrous §6.2.3; [exact output](../science/qubit_example.md#3-exact-output-from-the-kraus-sum); [witness](../science/qubit_example.md#4-an-exact-entanglement-certificate); [local projection](../science/qubit_example.md#5-a-local-projection-exposes-two-qubit-entanglement).
+
+<a id="m19"></a>
+
+### M19. Noise tolerance, witness thresholds and separability
+
+**Phase:** Narrative/innovation.
+
+**Central question:** Which noise conclusions follow from one witness, the full spectrum and a norm perturbation bound?
+
+**Understanding target:** Distinguish the fixed-witness threshold eta>9/10, the exact global-dephasing transition at the root of 2 eta^3-7 eta^2+4, and the conservative trace-norm perturbation radius. Explain why PPT sufficiency applies on the occupied 3-by-2 space and why these are distinct noise statements.
+
+**Dependencies and story role:** M07 and M18. Converts the exact example into a robust but carefully specified physical result.
+
+**Conceptual connection:** A sufficient witness, an exact state-family boundary and an arbitrary-output norm ball answer different questions.
+
+**Source pointers:** Watrous §§1.1.3, 3.3 and 6.2.3; [robustness derivation](../science/robustness.md).
+
+<a id="m20"></a>
+
+### M20. Nonabelian support is not a channel-specific guarantee
+
+**Phase:** Narrative/innovation.
+
+**Central question:** Why do some channels remain nonentangling even when their order support is nonabelian?
+
+**Understanding target:** Explain the shared target eigenbasis for depolarizer blocks, Pauli reorderings by phases, and the common-final-entanglement-breaking-slot example. Keep these channel-specific obstructions distinct from the existential converse over all identical channels.
+
+**Dependencies and story role:** M12–M13 and M17–M19. Tests the theorem’s quantifiers against important boundary examples.
+
+**Conceptual connection:** A necessary architecture can support a capability without making every allowed channel attain it.
+
+**Source pointers:** Watrous §§6.1.1–6.1.2; [nonentangling channel families](../science/interpretation.md#channel-families-that-remain-nonentangling).
+
+<a id="m21"></a>
+
+### M21. A physical controller encoding changes local noise
+
+**Phase:** Narrative/innovation.
+
+**Central question:** What information must be specified before comparing noisy coherent-order protocols?
+
+**Understanding target:** Define independent phase flips on actual controller bits with gamma=1-2z and the Schur factor gamma to the Hamming distance. For three occupied orders in a two-bit register, distinguish the three allocations by which pair has distance two. Separate gamma=4/5 from a global dephasing parameter of the same numerical value.
+
+**Dependencies and story role:** M04–M05, M10 and M19. Establishes the physical noise model used by the new shared experiment.
+
+**Conceptual connection:** A code assignment changes which order pairs decohere fastest; order names and scalar coherence summaries do not determine that geometry.
+
+**Source pointers:** Watrous §4.1.3; [physical control noise](../science/noisy_separation.md#physical-control-noise); [sister physical codebook](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md#physical-codebook).
+
+<a id="m22"></a>
+
+### M22. A tilted, full-rank entanglement-breaking family
+
+**Phase:** Narrative/innovation.
+
+**Central question:** How can the retained and recovery experiments use the same raw noisy slots away from a special orthogonal point?
+
+**Understanding target:** Specify N_epsilon,theta as a depolarizing admixture of the measure-Z/prepare-tilted-axis channel. Explain entanglement breaking, full Choi rank for positive epsilon, theta=pi/2+delta, and the loss of the special squared-channel erasure identity under tilt. Keep raw slots distinct from per-slot unitary wrappers.
+
+**Dependencies and story role:** M02–M04, M17 and M21. Supplies the matched family whose robustness can be proved rather than inferred from one point.
+
+**Conceptual connection:** A final correction is allowed in recovery; wrapping each supplied slot would change the channel resource and the comparison.
+
+**Source pointers:** Watrous §2.2.2 and Chapter 6; [shared family](../science/noisy_separation.md#shared-family); [shared raw-slot access](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md#shared-access).
+
+<a id="m23"></a>
+
+### M23. Exact rational certificates for the retained outputs
+
+**Phase:** Narrative/innovation.
+
+**Central question:** How can finitely many computations establish a strict PPT margin without relying on floating-point eigenvalues?
+
+**Understanding target:** Construct the rational angle grid delta_k=2 arctan(k/400), the integer Kraus columns and weighted history sums. Explain the 249 exact shifted LDL certificates for three encodings at 83 grid points, and why the strict matrix bound concerns occupied 6-dimensional support rather than the unused 8-dimensional physical space.
+
+**Dependencies and story role:** M07, M18 and M21–M22. Establishes the finite exact obligation behind the uniform retained-state result.
+
+**Conceptual connection:** Exact positivity on occupied support plus the dimensional PPT theorem yields separability at grid points; interpolation is still needed between them.
+
+**Source pointers:** Watrous §§1.1.3 and 6.2.3; [exact grid certificate](../science/noisy_separation.md#exact-grid-certificate); [verification guide](../verification/README.md).
+
+<a id="m24"></a>
+
+### M24. The fixed recovery branch and its entanglement witness
+
+**Phase:** Narrative/innovation.
+
+**Central question:** What does the four-call sister experiment accept, and what certifies entanglement with a reference?
+
+**Understanding target:** Specify the eight physical codes, signed P2 effect and identity final correction. Define accepted Bell output tau, acceptance p, Bell reward f and witness w=f-p/2. Explain the 83 rational positive-witness certificates, the real branch’s input-independent success, and the fresh-pair cost 4/p.
+
+**Dependencies and story role:** M06–M07, M21–M23. Defines the comparison endpoint with its success condition and charged resources.
+
+**Conceptual connection:** The accepted reference–target cut R:T differs from the retained controller–target cut C:T, even with identical raw slot channels.
+
+**Source pointers:** Watrous §§2.3.2, 3.2 and 6.2.3; [specified protocols](../science/noisy_separation.md#specified-protocols); [exact certificate](../science/noisy_separation.md#exact-grid-certificate).
+
+<a id="m25"></a>
+
+### M25. From a rational grid to a uniform angular interval
+
+**Phase:** Narrative/innovation.
+
+**Central question:** What prevents an entanglement or PPT certificate from failing between checked grid points?
+
+**Understanding target:** Use a common Stinespring dilation and a telescoping bound for r-slot controlled routing to obtain trace-norm variation at most r times the angular difference. Apply the occupied-support partial-transpose bound, witness norm and success-effect bound to derive the strict margins for every abs(delta) at most .2 radians.
+
+**Dependencies and story role:** M03, M07, M23 and M24. Completes the uniform theorem by joining finite exact certificates to an analytical continuity argument.
+
+**Conceptual connection:** A finite grid alone proves a finite statement; a quantitative interpolation bound pays for the untested angles.
+
+**Source pointers:** Watrous §§2.2.2 and 3.3; [continuity proof](../science/noisy_separation.md#continuity-proof); [uniform separation](../science/noisy_separation.md#uniform-separation).
+
+<a id="m26"></a>
+
+### M26. What the robust separation does and does not compare
+
+**Phase:** Narrative/innovation.
+
+**Central question:** What operational conclusion survives once both bipartitions and every resource are stated?
+
+**Understanding target:** Explain the uniform result: the specified three-call unconditional C:T outputs are separable for every two-bit allocation, while the four-call accepted R:T output is NPT with .035<p<.095 and F>101/190. Keep three versus four slots, two versus three bits, and unconditional versus heralded outputs explicit.
+
+**Dependencies and story role:** M16, M20 and M24–M25. Integrates the new comparison into a precise operational statement.
+
+**Conceptual connection:** This separates two specified experiments under shared noise; it is not an equal-resource optimized separation or a universal no-go for retained protocols.
+
+**Source pointers:** Watrous §§2.3.2, 6.1.1 and 6.2.3; [uniform theorem](../science/noisy_separation.md#uniform-separation); [operational meaning](../science/noisy_separation.md#operational-meaning).
+
+<a id="m27"></a>
+
+### M27. The sister recovery frontier and its evidence boundary
+
+**Phase:** Narrative/innovation.
+
+**Central question:** How does optimizing recovery relate to, but differ from, classifying retained entanglement?
+
+**Understanding target:** Describe the sister project’s complete controller feasible set, physical three-X readout frontier, and certified tilted optimality interval. Distinguish a fidelity upper bound from a separability theorem: optimized Bell fidelity at most one half does not prove every complex-controller Choi output separable.
+
+**Dependencies and story role:** M07, M21–M22 and M26. Places the entanglement track beside the independently proved recovery optimization.
+
+**Conceptual connection:** An optimized scalar objective can settle a recovery tradeoff without classifying every possible entanglement output.
+
+**Source pointers:** Watrous §§1.2.3 and 3.2; [controller feasibility](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md#controller-feasibility); [frontier theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md#frontier-theorem); [tilted optimality](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md#tilted-optimality).
+
+<a id="m28"></a>
+
+### M28. Real branches, complex controllers and exactness
+
+**Phase:** Narrative/innovation.
+
+**Central question:** Which structural facts justify normalized-channel and exact-recovery conclusions?
+
+**Understanding target:** Explain why real Y-covariant accepted branches have scalar success effects, while arbitrary complex controllers need not. Place the sister’s strict Schur-noise exact-recovery obstruction alongside its real attaining noisy frontier, retaining the full-rank, raw-slot and unobserved-noise assumptions.
+
+**Dependencies and story role:** M03, M21–M22, M24 and M27. Checks that normalization and theorem transfers use their actual hypotheses.
+
+**Conceptual connection:** A Bell-input optimization can provide a tight bound when an input-independent attaining representative is proved; that does not make every feasible branch input independent.
+
+**Source pointers:** Watrous §§2.2.2, 2.3.2 and 4.1.3; [real-controller reduction](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md#real-controller-reduction); [strict Schur obstruction](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_recovery_obstruction.md#strict-schur-obstruction).
+
+<a id="m29"></a>
+
+### M29. Connect each claim to its proof and antecedents
+
+**Phase:** Narrative/innovation.
+
+**Central question:** Which scientific conclusions are inherited, analytically proved, exactly certified or numerically checked?
+
+**Understanding target:** Credit the conditional-unitary criterion, earlier two-history results and established PPT theorem. Separate the project’s constrained realizations and order-support classification from the new exact grid-plus-continuity comparison. Explain what original verification and the independent joint rebuild establish, including the limits of sampled examples and bounded literature review.
+
+**Dependencies and story role:** M12–M28. Integrates the source and evidence structure before the final synthesis.
+
+**Conceptual connection:** Attribution concerns what conclusion is inherited; verification concerns which assertion was actually checked. Neither is supplied by shared terminology or numerical agreement.
+
+**Source pointers:** Watrous foundations through the [bridge](WATROUS_BRIDGE.md); [related work](../references/RELATED_WORK.md); [verification guide](../verification/README.md); [scientific overview](../science/README.md).
+
+<a id="m30"></a>
+
+### M30. The complete entanglement and recovery connection
+
+**Phase:** Narrative/innovation. **Phase synthesis.**
+
+**Central question:** What complete story connects relative order structure, physical realization and robustly different endpoints?
+
+**Understanding target:** Explain the abelian universal obstruction, the nonabelian existential realization, the minimal entanglement-breaking example and its robustness, and the tilted shared-family separation. State why retained C:T entanglement, conditional R:T recovery, communication capacity and causal-structure certification remain distinct tasks.
+
+**Dependencies and story role:** M10–M29. Phase synthesis: joins algebra, realizability, minimality, controller-noise geometry, evidence and the limits of transfer.
+
+**Conceptual connection:** A common foundation supports two distinct capabilities; the scientific connection is established through specified models and proofs rather than assumed from the word entanglement.
+
+**Source pointers:** Watrous channel, separability and permutation sections through the [bridge](WATROUS_BRIDGE.md); [order-support theorem](../science/order_criterion.md#theorem-1-the-order-support-criterion); [uniform separation](../science/noisy_separation.md#uniform-separation); [scientific route](../science/README.md).
