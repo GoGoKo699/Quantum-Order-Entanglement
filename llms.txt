@@ -104,29 +104,19 @@ Shared physical-noise route:
 
 The separation holds for |delta|<=.2 radians; the sister tilted-optimality interval is |tan(delta/2)|<=1/5. CT positivity is strict only on occupied six-dimensional support. Protocols have different calls, controller bits, bipartitions and conditioning; this is not a universal retained-protocol no-go or optimized equal-resource separation. Arbitrary-controller Bell fidelity<=1/2 does not classify all outputs as separable. Both projects use Watrous as their sole educational anchor and keep exactly30 distinct project-defined milestones each.
 
-The sister https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md and https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md additionally solve the rank-two M, all-six-order, global-dephasing target-only half-diamond benchmark and randomized fresh1/2/3 expectedcallcost. Corrected fine labels are averaged; only aggregate acceptance is required input independent. Keep that output promise distinct from retained C:T and from the fullrank physical-local-noise fourcall Bellfrontier. https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/verification/native_benchmark/README.md owns reproduction.
-
-Encoded local-noise recovery and cost:
-- science/interpretation.md#encoded-local-noise-and-recovery-cost connects the
-  accepted reference-target witness to this repository's separate retained
-  controller-target task.
-- https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/local_controller_encoding.md
-  owns the complete comparison-encoding frontier in its proved coherence regime
-  and the specified lower-noise alternative-encoding construction.
-- https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/all_encoding_cost_bound.md
-  owns the calibrated all-assignment recovery-cost converse and its exact proof.
-- At two-call visibility x=.9, per-bit three-call visibility q=x^(3/2), routing
-  windows T_m=m*tau and error budget 3/8, every injective assignment of the six
-  orders to three-bit computational words has optimum 101/32 calls per accepted
-  target. Every positive three-call trial share is strictly suboptimal. This
-  includes nonuniform preparation, ancillary and complex controllers, and the
-  full continuous family of final target unitary corrections.
-- At the different lower-noise point x=.9604, a specified alternative encoding
-  attains a 2.299% saving. The two conclusions concern different operating points.
-- The stated attaining error-3/8 mixtures have accepted RT Bell overlap 5/8 > 1/2
-  and are entangled. This neither classifies retained CT entanglement nor proves
-  a capacity advantage, a hardware implementation, or causal nonseparability.
-- The all-assignment class uses six distinct computational words with two words
-  unoccupied. It excludes redundant eight-word, noncomputational and protected
-  encodings. The common-error interval 3/22 through 1/2 is closed; accuracy extension
-  below 3/22 and the full optimal noise/encoding phase diagram remain separate.
+Optional sister recovery context:
+- science/interpretation.md#encoded-local-noise-and-recovery-cost is the local
+  entrypoint. It defines the rank-two channel, matrix-word chronology, physical
+  coherence law, target-only accepted output, fresh-trial cost comparisons and
+  normalized reference-target Bell witness. It keeps the x=.9 all-assignment
+  cost converse separate from the x=.9604 lower-noise construction.
+- learning/WATROUS_BRIDGE.md#recovery-connection-bridge explains scalar acceptance,
+  Bell witnesses and the difference between a state overlap and channel error.
+- learning/WATROUS_BRIDGE.md#native-recovery-bridge gives optional context for
+  the sister recovery problem. Its detailed optimization is not required to
+  understand this repository's proofs or complete its milestone map.
+- For full recovery proofs, follow the local interpretation's links to the sister
+  native-three-call, randomized-cost, physical-encoding and all-encoding pages.
+  Their output averages corrected fine controller labels; only aggregate success
+  is input independent. Their exact half-diamond error and charged fresh-trial
+  costs do not classify retained C:T entanglement, capacity or causal structure.

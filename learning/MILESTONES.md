@@ -15,7 +15,7 @@ The **10 + 20 allocation** follows the project’s scientific structure. The bac
 | Narrative/innovation | [M11](#m11)–[M16](#m16) | Universal obstruction, inherited state criterion and constrained converse |
 | Narrative/innovation | [M17](#m17)–[M20](#m20) | Minimal qubit realization, witnesses, robustness and channel-specific limits |
 | Narrative/innovation | [M21](#m21)–[M26](#m26) | Physical noise, shared tilted family, exact certificates and uniform comparison |
-| Narrative/innovation | [M27](#m27)–[M30](#m30) | Sister optimization, normalization, evidence and whole-project synthesis |
+| Narrative/innovation | [M27](#m27)–[M30](#m30) | Accepted-state witnesses, normalization, evidence and whole-project synthesis |
 
 Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1–6.1.2, §6.2.3 and §7.1.1. The noisy comparison also uses measurement, norm and Schur-map tools in §§2.3, 3.3 and 4.1.3. The [bridge](WATROUS_BRIDGE.md) explains their roles; it is a focused route, not an assignment to read the whole book.
 
@@ -307,7 +307,7 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 **Conceptual connection:** A code assignment changes which order pairs decohere fastest; order names and scalar coherence summaries do not determine that geometry.
 
-**Source pointers:** Watrous §4.1.3; [physical control noise](../science/noisy_separation.md#physical-control-noise); [sister physical codebook](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md#physical-codebook).
+**Source pointers:** Watrous §4.1.3; [physical control noise](../science/noisy_separation.md#physical-control-noise); [local protocol encodings](../science/noisy_separation.md#specified-protocols).
 
 <a id="m22"></a>
 
@@ -323,7 +323,7 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 **Conceptual connection:** A final correction is allowed in recovery; wrapping each supplied slot would change the channel resource and the comparison.
 
-**Source pointers:** Watrous §2.2.2 and Chapter 6; [shared family](../science/noisy_separation.md#shared-family); [shared raw-slot access](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md#shared-access).
+**Source pointers:** Watrous §2.2.2 and Chapter 6; [shared family](../science/noisy_separation.md#shared-family); [local raw-slot access](../science/noisy_separation.md#shared-family).
 
 <a id="m23"></a>
 
@@ -391,35 +391,35 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 <a id="m27"></a>
 
-### M27. The sister recovery frontier and its evidence boundary
+### M27. What an accepted Bell witness establishes
 
 **Phase:** Narrative/innovation.
 
-**Central question:** How does optimizing recovery relate to, but differ from, classifying retained entanglement?
+**Central question:** What does Bell overlap tell us about an accepted output, and how does that differ from channel error?
 
-**Understanding target:** Describe the sister project’s complete controller feasible set, physical three-X readout frontier and certified tilted interval. Distinguish that full-rank, four-call Bell frontier from the rank-two six-order, three-call half-diamond benchmark, first with global logical dephasing and then with physically encoded local-bit noise. In the latter benchmark, fine corrected labels are averaged and only aggregate success must be input independent. Explain how the Hamming-distance code kernel changes a recovery frontier without changing the retained-order criterion. An optimized Bell fidelity at most one half does not prove every complex-controller Choi output separable.
+**Understanding target:** Derive the separable two-qubit bound F at most one half and apply F greater than one half to the normalized accepted R:T state. Explain why a fidelity at or below one half does not establish separability. Use a Bell input and its projector measurement to show that half-diamond channel error is at least 1-F; equality requires an additional attaining-channel argument.
 
-**Dependencies and story role:** M07, M21–M22 and M26. Places the entanglement track beside the independently proved recovery optimization.
+**Dependencies and story role:** M06–M07 and M24–M26. Identifies the exact evidence supplied by the accepted-state comparison without importing a recovery optimization theorem.
 
-**Conceptual connection:** An optimized scalar objective can settle a recovery tradeoff without classifying every possible entanglement output.
+**Conceptual connection:** A state witness can establish entanglement while leaving a channel-distance or all-controller optimization problem unresolved.
 
-**Source pointers:** Watrous §§1.2.3 and 3.2; [controller feasibility](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md#controller-feasibility); [frontier theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md#frontier-theorem); [tilted optimality](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md#tilted-optimality); [native three-call benchmark](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md#native-three-call-frontier); [encoded local noise](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/local_controller_encoding.md); [local comparison](../science/interpretation.md#encoded-local-noise-and-recovery-cost).
+**Source pointers:** Watrous §§3.2 and 6.2.3; [local witness and error explanation](WATROUS_BRIDGE.md#bell-overlap-and-channel-error); [fixed-branch theorem](../science/noisy_separation.md#uniform-separation); [normalized accepted-state example](../science/interpretation.md#accepted-reference-target-witness).
 
 <a id="m28"></a>
 
-### M28. Real branches, complex controllers and exactness
+### M28. Scalar success and conditioning
 
 **Phase:** Narrative/innovation.
 
-**Central question:** Which structural facts justify normalized-channel and exact-recovery conclusions?
+**Central question:** When can an accepted operation be normalized into one channel for every input?
 
-**Understanding target:** Explain why real Y-covariant accepted branches have scalar success effects, while arbitrary complex controllers need not. Place the sister’s strict Schur-noise exact-recovery obstruction alongside its real attaining noisy frontier, retaining the full-rank, raw-slot and unobserved-noise assumptions.
+**Understanding target:** Relate the success probability to the effect E-dagger(I) and show that input-independent acceptance is equivalent to a scalar effect pI. Prove this property for the specified real Y-covariant P2 branch using real symmetric qubit matrices. Explain why arbitrary complex branches need not be scalar and why corrected fine labels can have input-dependent probabilities even when their aggregate success is scalar.
 
-**Dependencies and story role:** M03, M21–M22, M24 and M27. Checks that normalization and theorem transfers use their actual hypotheses.
+**Dependencies and story role:** M03, M06, M22, M24 and M27. Justifies the normalized accepted-channel language used in the local comparison.
 
-**Conceptual connection:** A Bell-input optimization can provide a tight bound when an input-independent attaining representative is proved; that does not make every feasible branch input independent.
+**Conceptual connection:** Conditioning on an input-dependent effect does not define the same normalized channel on every input; summing fine outcomes and retaining them are different output promises.
 
-**Source pointers:** Watrous §§2.2.2, 2.3.2 and 4.1.3; [real-controller reduction](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md#real-controller-reduction); [strict Schur obstruction](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_recovery_obstruction.md#strict-schur-obstruction).
+**Source pointers:** Watrous §§2.2.2 and 2.3.2; [local normalization argument](WATROUS_BRIDGE.md#when-acceptance-defines-a-channel); [specified recovery branch](../science/noisy_separation.md#specified-protocols); [averaging recovery labels](../science/interpretation.md#averaging-recovery-labels-changes-the-task).
 
 <a id="m29"></a>
 
@@ -429,13 +429,13 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 **Central question:** Which scientific conclusions are inherited, analytically proved, exactly certified or numerically checked?
 
-**Understanding target:** Credit the conditional-unitary criterion, earlier two-history results and established PPT theorem. Separate the project’s constrained realizations and order-support classification from the new exact grid-plus-continuity comparison. Explain what original verification and the independent joint rebuild establish, including the limits of sampled examples and bounded literature review. Explain the sister benchmark’s exact fresh-trial cost closure at a fixed half-diamond tolerance. Distinguish the gain at equal global visibilities eta2=eta3=.9 from the local-noise all-encoding closure under proportional declared windows at x=.9: 20,160 injective six-label three-bit codes, arbitrary controllers and continuous final unitary corrections cannot improve 101/32 at error 3/8. Relate the strict three-call penalty to the 97 symmetry classes and 388 exact positive-semidefinite checks. Keep the 2.2990% constructive gain at the different point x=.9604 and the open lower-noise phase diagram separate from that calibrated converse.
+**Understanding target:** Credit the conditional-unitary criterion, earlier two-history results and established PPT theorem. Separate the project's constrained realizations and order-support classification from its exact grid-plus-continuity comparison. Explain what the original verification and independent joint rebuild establish, including the limits of sampled examples and the literature comparison. Identify the optional sister recovery results as different theorems with different channel ranks, noise models, outputs and resource prices.
 
-**Dependencies and story role:** M12–M28. Integrates the source and evidence structure before the final synthesis.
+**Dependencies and story role:** M12–M28. Integrates the local source and evidence structure before the final synthesis.
 
-**Conceptual connection:** Attribution concerns what conclusion is inherited; verification concerns which assertion was actually checked. Neither is supplied by shared terminology or numerical agreement.
+**Conceptual connection:** Attribution identifies which conclusion is inherited; verification identifies which assertion was actually checked. Shared terminology and numerical agreement do not settle either question.
 
-**Source pointers:** Watrous foundations through the [bridge](WATROUS_BRIDGE.md); [related work](../references/RELATED_WORK.md); [verification guide](../verification/README.md); [scientific overview](../science/README.md); [randomized call-cost closure](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md#convex-call-cost); [duration assumptions](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md#duration-model); [all-encoding cost certificate](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/all_encoding_cost_bound.md); [comparison and endpoint boundaries](../science/interpretation.md#encoded-local-noise-and-recovery-cost).
+**Source pointers:** Watrous foundations through the [bridge](WATROUS_BRIDGE.md); [related work](../references/RELATED_WORK.md); [verification guide](../verification/README.md); [scientific overview](../science/README.md); optional [local sister comparison](../science/interpretation.md#encoded-local-noise-and-recovery-cost).
 
 <a id="m30"></a>
 
@@ -445,10 +445,10 @@ Watrous’s relevant foundations include §§2.1.2–2.1.3, §2.2.2, §§6.1.1�
 
 **Central question:** What complete story connects relative order structure, physical realization and robustly different endpoints?
 
-**Understanding target:** Explain the abelian universal obstruction, nonabelian existential realization, minimal entanglement-breaking example and robustness, then the tilted shared-family separation and separate recovery-cost benchmark. Connect the calibrated all-encoding converse and lower-noise encoded construction to their actual resources and evidence. State why accepted R:T Bell overlap 5/8 certifies that cut’s entanglement while retained C:T entanglement, communication capacity and causal-structure certification remain distinct tasks. Keep the general order-support theorem central and the unresolved lower-noise recovery optimization visible.
+**Understanding target:** Explain the abelian universal obstruction, nonabelian existential realization, minimal entanglement-breaking example and exact stated robustness. Then derive the tilted shared-family comparison from its local protocol definitions, exact certificates and continuity bound. State the distinct bipartitions, conditioning and costs, and explain why retained C:T entanglement, accepted R:T entanglement, communication capacity and causal-structure certification are different conclusions.
 
-**Dependencies and story role:** M10–M29. Phase synthesis: joins algebra, realizability, minimality, controller-noise geometry, evidence and the limits of transfer.
+**Dependencies and story role:** M10–M29. Phase synthesis: joins algebra, realizability, minimality, controller-noise geometry, normalization and the complete proof route.
 
-**Conceptual connection:** A common foundation supports two distinct capabilities; the scientific connection is established through specified models and proofs rather than assumed from the word entanglement.
+**Conceptual connection:** A common channel foundation supports different operational capabilities; the connection rests on explicit models and proofs rather than the word entanglement.
 
-**Source pointers:** Watrous channel, separability and permutation sections through the [bridge](WATROUS_BRIDGE.md); [order-support theorem](../science/order_criterion.md#theorem-1-the-order-support-criterion); [uniform separation](../science/noisy_separation.md#uniform-separation); [scientific route](../science/README.md).
+**Source pointers:** Watrous channel, separability and permutation sections through the [bridge](WATROUS_BRIDGE.md); [order-support theorem](../science/order_criterion.md#theorem-1-the-order-support-criterion); [uniform separation](../science/noisy_separation.md#uniform-separation); [local interpretation](../science/interpretation.md); [scientific route](../science/README.md).

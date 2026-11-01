@@ -97,11 +97,13 @@ The sister [six-order native recovery benchmark](https://github.com/GoGoKo699/Qu
 
 ## Encoded local noise and recovery cost
 
-The rank-two channel in the [minimal example](qubit_example.md) also supports a precise comparison under independent physical controller dephasing. This family has no depolarizing admixture and is distinct from the full-rank four-call [shared-noise comparison](noisy_separation.md). For a three-bit assignment $`c_\pi`$ of the six matrix-product orders, the local phase-noise kernel is
+The rank-two channel in the [minimal example](qubit_example.md) also supports a precise comparison under independent physical controller dephasing. This family has no depolarizing admixture and is distinct from the full-rank four-call [shared-noise comparison](noisy_separation.md). This section supplies optional context from the sister recovery project; the retained-entanglement theorem and its proofs above do not depend on that optimization.
+
+The recovery labels are the six **matrix-product words**, with the rightmost slot acting first. They differ from the first-slot-first chronological labels used in the retained experiment. For an assignment $`c_\pi`$ of these labels to distinct three-bit computational words, let $`\kappa`$ be the per-bit coherence-decay rate. The local phase-noise kernel is
 
 ```math
 L_{\pi\sigma}(q)=q^{d_H(c_\pi,c_\sigma)},
-\qquad q=e^{-\gamma T_3},\qquad x=e^{-\gamma T_2}.
+\qquad q=e^{-\kappa T_3},\qquad x=e^{-\kappa T_2}.
 ```
 
 The [local-noise account](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/local_controller_encoding.md) fixes this channel and encoded order control, with every occupied branch traversing every independent slot once. The output is the corrected accepted target-only channel, with only its aggregate acceptance required to be input independent. The charged routing windows are also the controller exposure windows; preparation/readout overhead and a gate-level router remain outside that model.
@@ -112,7 +114,9 @@ The [local-noise account](https://github.com/GoGoKo699/Quantum-Order-Distillatio
 | Independent local dephasing, $`x=0.9`$, $`q=x^{3/2}`$, $`T_m=m\tau`$, error budget $`3/8`$ | The [all-assignment converse](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/all_encoding_cost_bound.md) gives exact cost $`101/32`$ for all 20,160 injective six-label computational-basis assignments; every positive three-call trial share is strictly suboptimal. |
 | The same local-noise and duration law at $`x=0.9604`$ | A specified alternative encoding attains a 2.299% saving against the optimal one/two-call comparator. Global optimality over encodings at that lower-noise point is not asserted. |
 
-The second row covers arbitrary allowed mixed/ancillary complex controls, nonuniform preparations, controller measurements and continuous final target-unitary corrections. Its encoding class uses six distinct computational words and leaves the other two unoccupied. It does not cover redundant eight-word assignments, noncomputational or protected encodings, a different controller channel, target filters or additional calls. The bound also matches the optimal one/two-call cost throughout the common-error interval $`3/22\le\epsilon\le1/2`$; it does not settle accuracy extension below $`3/22`$.
+The second row covers arbitrary allowed mixed/ancillary complex controls, nonuniform preparations, controller measurements and continuous final target-unitary corrections. Its encoding class uses six distinct computational words and leaves the other two unoccupied. It does not cover redundant eight-word assignments, noncomputational or protected encodings, a different controller channel, target filters or additional calls. With $`e`$ denoting half-diamond error, the bound also matches the optimal one/two-call cost throughout the common-error interval $`3/22\le e\le1/2`$; it does not settle accuracy extension below $`3/22`$.
+
+<a id="accepted-reference-target-witness"></a>
 
 ### The accepted reference–target witness
 
@@ -123,11 +127,19 @@ At error $`3/8`$, the specified attaining recovery mixtures have normalized iden
 \qquad |\Phi\rangle=\frac{|00\rangle+|11\rangle}{\sqrt2}.
 ```
 
-The accepted Choi state therefore has the entanglement-witness expectation
+Write the aggregate accepted map as $`\mathcal E=p\Lambda`$, where $`\Lambda`$ is trace preserving. Its **normalized** accepted Choi state is
+
+```math
+\rho_{RT}^{\mathrm{acc}}
+=(\mathrm{id}_R\otimes\Lambda)(|\Phi\rangle\langle\Phi|),
+\qquad \mathrm{Tr}\rho_{RT}^{\mathrm{acc}}=1.
+```
+
+This normalization differs from the unnormalized channel Choi operator used in the [full-rank bound](noisy_separation.md#shared-family). The accepted state has the entanglement-witness expectation
 
 ```math
 \mathrm{Tr}\!\left[\left(\frac{I_{RT}}2-|\Phi\rangle\langle\Phi|\right)
- J(\Lambda)\right]=\frac12-\frac58=-\frac18.
+ \rho_{RT}^{\mathrm{acc}}\right]=\frac12-\frac58=-\frac18.
 ```
 
 This certifies preserved entanglement between the untouched reference and the accepted target. It does not describe a retained controller–target state: the controller has been measured, its corrected fine labels averaged, and success conditioned on acceptance. It also gives no asymptotic communication-capacity or causal-nonseparability conclusion. The original order-support theorem continues to answer its separate unconditional $`C:T`$ question.
