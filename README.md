@@ -2,6 +2,8 @@
 
 **Which coherent orders of identical noisy channels can generate entanglement between the order controller and the target?**
 
+**Sister project:** [Quantum Order Distillation](https://github.com/GoGoKo699/Quantum-Order-Distillation) studies heralded channel recovery and its costs. This repository studies retained controller–target entanglement from coherent order. The [shared-noise comparison](science/noisy_separation.md) connects the two tasks while keeping their outputs, resources and conditioning explicit.
+
 Every definite order of $`n`$ independent copies of a channel $`\mathcal N`$ implements $`\mathcal N^n`$. This project gives an exact criterion for when coherent control over those orders can nevertheless produce entanglement across the retained controller–target bipartition.
 
 For an occupied pure-control support $`\Pi\subseteq S_n`$, choose any reference $`\pi_0\in\Pi`$ and form
