@@ -42,9 +42,7 @@ The [shared-noise theorem](science/noisy_separation.md#uniform-separation) compa
 
 The proof reconstructs 249 exact retained-state partial-transpose certificates and 83 exact recovery witnesses, then extends the strict margins to the whole interval. Its positive lower bound acts on the occupied $`3\times2`$ support. The [full statement and proof](science/noisy_separation.md) keep the bipartitions, conditioning and resources explicit: three versus four calls, two versus three controller bits, and unconditional versus accepted outputs. This establishes a simultaneous robust example for these protocols.
 
-The sister repository [Quantum Order Distillation](https://github.com/GoGoKo699/Quantum-Order-Distillation) owns the [common raw-slot model](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/noisy_routing_model.md), [controller characterization](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/controller_optimization.md), [full recovery frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/recovery_frontier.md) and [tilted optimality proof](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/tilted_readout.md). Both tracks use the same Watrous educational anchor. Retained controller–target entanglement and recovered reference–target entanglement remain separate tasks.
-
-The sister track also gives a [complete six-order three-call recovery frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md) for the fixed rank-two measure-$`Z`$/prepare-$`X`$ channel under global logical dephasing, with an [exact randomized one-/two-/three-call cost envelope](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md). It evaluates the accepted target-only channel after corrected fine labels are averaged. That half-diamond recovery task is separate from retaining $`C:T`$, and from the four-call full-rank family with physical local noise.
+Quantum Order Distillation develops the broader recovery optimization. This repository contains the complete [specified-protocol separation proof](science/noisy_separation.md); its [local recovery comparison](science/interpretation.md#encoded-local-noise-and-recovery-cost) explains the related accepted-output and cost results, including their noise models and resource boundaries. The sister's full recovery frontiers and encoding optimizations are supplementary reading, rather than prerequisites for the retained-entanglement result.
 
 ## Read the science
 
@@ -58,6 +56,7 @@ Start with the [scientific account](science/README.md), or use a direct route be
 | Exact entanglement-breaking qubit construction and local projection | [Minimal example](science/qubit_example.md) |
 | Noise model, exact threshold and conservative perturbation bound | [Robustness](science/robustness.md) |
 | Retained entanglement and accepted recovery under physical controller noise | [Uniform separation theorem and proof](science/noisy_separation.md) |
+| How encoded local noise affects recovery cost, and what it says about entanglement | [Recovery outputs and cost boundaries](science/interpretation.md#encoded-local-noise-and-recovery-cost) |
 | Channel-specific obstructions and operational meaning | [Interpretation](science/interpretation.md) |
 | Inherited results and closest primary sources | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | Reproducible finite certificates | [Verification](verification/README.md) |

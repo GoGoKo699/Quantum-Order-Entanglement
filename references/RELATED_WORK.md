@@ -20,7 +20,9 @@ The [noisy separation](../science/noisy_separation.md) adds a different statemen
 | [Sazim et al.; Wilson–Chiribella (2021)](#permutation-structure-for-depolarizers) | Cyclic cosets and permutation-cycle structure for depolarizer communication | Group organization and cyclic/noncyclic distinctions are already established |
 | [Goldberg et al. (2023)](#goldberg2023) | Three identical noisy channels in three coherent order alternatives for metrology | The three-slot setup alone is not new; the retained entanglement question is different |
 | [Kechrimparis et al. (2024, 2025)](#nested-switch-recovery) | Nested four-slot architecture and Pauli-channel purification | Supplies the recovery router and ideal branch; the noisy raw-slot optimization is developed in the sister project |
+| [Mitra, Badhani and Ghosh (2023)](#mitra2023) | Controller depolarization degrades the corrected two-switch recovery channel | Establishes noisy-control recovery analysis, distinct from retained controller–target entanglement |
 | [Molitor et al. (2024)](#control-noise) | Open-control two-slot switching, with noise-dependent accepted states and probabilities | Establishes prior control-noise analysis; its protected outcomes prevent a blanket noisy-control no-go claim |
+| [Wu et al. (2025)](#wu2025) | Fixed-channel switch communication gain, with Pauli-channel classical-capacity results | Controller-assisted communication gain and retained controller–target entanglement are different properties |
 | [Regula and Takagi (2021)](#positive-components) | An unwanted positive component that survives acceptance obstructs perfect distillation | Supplies the obstruction principle; the sister project's routing proof establishes that survival for strict Schur noise |
 
 <a id="roszak2018"></a>
@@ -127,9 +129,27 @@ The sister project's [native three-call frontier](https://github.com/GoGoKo699/Q
 
 These are fixed-channel target-only recovery results. They do not classify retained controller–target entanglement or replace this repository's three-order versus four-call [noisy separation](../science/noisy_separation.md). The rank-deficient three-call benchmark, full-rank four-call theory and physical-local-noise Bell-fidelity frontier have different hypotheses. Conditional scalar-dephasing duration comparisons are not hardware or capacity certifications, and the primary-source comparison does not establish publication priority.
 
+The sister project's [physical encoding analysis](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/local_controller_encoding.md) replaces logical dephasing by independent phase damping on three physical order bits, yielding the standard Hamming-distance Schur kernel. It proves a frontier for the specified pairwise-comparison encoding and certifies a separate alternate encoding's $`2.299\%`$ attained cost saving at $`x=0.9604`$, $`q=0.941192`$, $`\epsilon=3/8`$, with declared windows $`T_m=m\tau`$. That attained bound is not a global encoding optimum.
+
+Its [all-encoding cost theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/all_encoding_cost_bound.md) instead proves $`C^*_{123}=C^*_{12}=101/32`$ at $`x=0.9`$, $`q=x^{3/2}`$ and $`\epsilon=3/8`$ for every one of the $`20{,}160`$ injective six-label computational encodings, including arbitrary complex mixed/ancillary controllers, instruments and final unitary corrections. A positive raw three-call trial share incurs a strict penalty. This finite physical-noise exclusion is consistent with a lower-noise attained advantage and with the earlier equal-logical-visibility advantage: the parameters and noise channels differ.
+
+These results belong to accepted **reference–target** recovery and its paid success probability. Bell overlap $`5/8>1/2`$ certifies entanglement of an accepted reference–target output; it does not certify retained controller–target entanglement. Neither the exact cost certificate nor the chosen encoding extends the abelian/nonabelian criterion to noisy retained outputs. The general order-support theorem remains this repository's distinct contribution; the common switch formalism, channel family and shared recovery comparisons are credited once.
+
+<a id="wu2025"></a>
+
+**Zhen Wu, James Fullwood, Zhihao Ma, Si-Qi Zhou, Qi Zhao and Giulio Chiribella**, *General communication enhancement via the quantum switch*, **Physical Review A 111**, 012605 (2025). [DOI](https://doi.org/10.1103/PhysRevA.111.012605); [arXiv:2407.02726v1](https://arxiv.org/html/2407.02726v1).
+
+The paper defines communication gain for the switched channel retaining its controller, proves a necessary condition for gain and gives Pauli-channel classical-capacity results. Its general sufficiency proposal is conjectural. A communication gain does not imply controller–target entanglement: product-branch controller flags can assist communication. The order-support criterion instead concerns whether some input and some repeated channel can entangle this retained bipartition.
+
 <a id="control-noise"></a>
 
 ## Control noise and protected conditional outcomes
+
+<a id="mitra2023"></a>
+
+**Arindam Mitra, Himanshu Badhani and Sibasish Ghosh**, *Improvement in quantum communication using quantum switch*, **Physica Scripta 98**, 045101 (2023). [DOI](https://doi.org/10.1088/1402-4896/acbcf7); [arXiv:2108.14001v6](https://arxiv.org/abs/2108.14001), revised 10 April 2023.
+
+Section III.D, Example 3, Eqs. (52)–(54), shows that controller depolarization turns an exactly corrected two-order recovery protocol into a noisy effective target channel. This establishes an earlier recovery/decoherence comparison. It does not classify retained controller–target entanglement, independent physical-bit encodings, or success-weighted call-cost optima.
 
 **Otavio A. D. Molitor, André H. A. Malavazi, Roberto Dobal Baldijão, Alexandre C. Orthey Jr., Ismael L. Paiva and Pedro R. Dieguez**, *Quantum switch instabilities with an open control*, **Communications Physics 7**, 373 (2024). [DOI](https://doi.org/10.1038/s42005-024-01843-y); [published full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11576514/); [arXiv:2405.09631v1](https://arxiv.org/abs/2405.09631v1).
 

@@ -40,9 +40,11 @@ The [uniform noisy separation](noisy_separation.md) extends the concrete channel
 
 The separation proof is authoritative here. The common raw-slot/controller foundation and recovery optimization are authoritative in Quantum Order Distillation. These shared results are credited once across the family; the original universal order-support theorem and exact-recovery threshold retain their distinct hypotheses and conclusions.
 
-## Fixed-channel recovery benchmark
+## Optional recovery comparison
 
-The sister [native three-call theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md#native-three-call-frontier) and [randomized cost theorem](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md#convex-call-cost) concern the rank-two channel of the minimal example, all six permutation labels and global logical controller dephasing. Their output averages corrected fine labels, retaining only aggregate acceptance; their exact objective is target-only half-diamond error with fresh-trial cost. These hypotheses differ from both the unconditional retained entanglement criterion and the physical-local-noise separation above. The native attaining channels establish the Bell-to-diamond equality used there, rather than assuming it for arbitrary accepted outputs.
+The same rank-two channel as the minimal example also appears in the sister project's accepted target-only recovery problem. Its global logical-noise benchmark and encoded physical-noise extension have different control supports, output promises and cost objectives from the retained-entanglement theorem here.
+
+The [local interpretation](interpretation.md#encoded-local-noise-and-recovery-cost) defines these distinctions, states the calibrated cost comparisons and derives the accepted reference–target Bell witness with explicit normalization. It is sufficient context for understanding the connection. Full recovery optimization proofs and their certificates remain in the sister repository; they are not dependencies of this project's order-support theorem or shared-noise separation proof.
 
 ## Learning route
 
