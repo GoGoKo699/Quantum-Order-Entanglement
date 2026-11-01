@@ -44,6 +44,8 @@ The sister repository [Quantum Order Distillation](https://github.com/GoGoKo699/
 
 The sister track also gives a [complete six-order three-call recovery frontier](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/native_three_call_frontier.md) for the fixed rank-two measure-$`Z`$/prepare-$`X`$ channel under global logical dephasing, with an [exact randomized one-/two-/three-call cost envelope](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/randomized_call_cost.md). It evaluates the accepted target-only channel after corrected fine labels are averaged. That half-diamond recovery task is separate from retaining $`C:T`$, and from the four-call full-rank family with physical local noise.
 
+For this rank-two channel, [encoded local controller dephasing](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/local_controller_encoding.md) changes the recovery-cost comparison. With two-call visibility $`x=0.9`$, proportional routing windows $`T_m=m\tau`$ and half-diamond error at most $`3/8`$, the [all-assignment converse](https://github.com/GoGoKo699/Quantum-Order-Distillation/blob/main/science/all_encoding_cost_bound.md) proves an exact cost of $`101/32`$ calls per accepted target for every injective assignment of the six orders to three-bit computational words. Every positive three-call trial share is strictly suboptimal at that benchmark. At the different lower-noise point $`x=0.9604`$, a specified alternative encoding instead attains a 2.299% saving. The accepted reference–target Choi states in the stated attaining comparisons have Bell overlap $`5/8>1/2`$ and are entangled. These cost statements neither classify retained $`C:T`$ states nor alter the order-support criterion.
+
 ## Read the science
 
 Start with the [scientific account](science/README.md), or use a direct route below.
@@ -56,6 +58,7 @@ Start with the [scientific account](science/README.md), or use a direct route be
 | Exact entanglement-breaking qubit construction and local projection | [Minimal example](science/qubit_example.md) |
 | Noise model, exact threshold and conservative perturbation bound | [Robustness](science/robustness.md) |
 | Retained entanglement and accepted recovery under physical controller noise | [Uniform separation theorem and proof](science/noisy_separation.md) |
+| How encoded local noise affects recovery cost, and what it says about entanglement | [Recovery outputs and cost boundaries](science/interpretation.md#encoded-local-noise-and-recovery-cost) |
 | Channel-specific obstructions and operational meaning | [Interpretation](science/interpretation.md) |
 | Inherited results and closest primary sources | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | Reproducible finite certificates | [Verification](verification/README.md) |
